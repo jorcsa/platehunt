@@ -1,0 +1,26 @@
+body.rtl, .map-overlay { text-align: right; }
+
+#slider-map { text-align: left; }
+
+#spots .read-more, #spots .view-map, #pagination li, #page-pagination a, #page-pagination > span, #spots.spot-grid > li .spot-content-top, .page-header .left, #page-view-labels ul li, #user-spots-header li, #user-spots .spot-title, #user-spots .spot-date, #user-spots .spot-status, #user-spots .spot-views, #_sf_user_profile_image,#_sf_tooltip_wrapper .inside .left, ._sf_box .head .left, .radio-replace, .check-replace, ._sf_switch, #_sf_custom_fields .one-fourth, #comments .comment-info, #comments .author, #comments .author a, #comments .date { float: right !important; }
+
+#spots.spot-grid > li .spot-search-fields-wrapper, .page-header .right, ._sf_box .head .right { float: left !important; }
+
+
+.overlay-image { float: right; margin-right: 0; margin-left: 15px; }
+ul.latest-news img, ul.related-spots img, ul.popular-spots img, ul.recently-viewed img { float: right; }
+ul.latest-news h5, ul.latest-news h6, ul.related-spots li h4, ul.related-spots li h5, ul.popular-spots li h4, ul.popular-spots li h5, ul.recently-viewed li h4, ul.recently-viewed li h5 { margin: 5px 90px 0 0; }
+#spots .spot-image { float: right; margin-right: 0; margin-left: 4%; }
+#user-spots .spot-views { text-align: right !important; }
+#_sf_user_profile_image { margin: 0 0 0 20px; }
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea { text-align: right; }
+
+#_sf_tooltip_wrapper .inside .right { margin: 0 50px 0 0; }
+.cart-items .price { left: 10px; right: auto; }
+#_sf_categories_box li .radio-replace, #_sf_categories_box li .check-replace { margin-right: 0; margin-left: 7px; }
+
+#_sf_tags_add_submit, #_sf_address_get { display: inline !important; }
+#_sf_custom_fields .one-fourth { margin-right: 0; margin-left: 4%; }
+#comments .author, #comments .author a, #comments .date { margin-right: 0; margin-left: 20px; }
+label .range-label { float: left; margin: 0 10px 0 0; }

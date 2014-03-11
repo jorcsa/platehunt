@@ -1,0 +1,9 @@
+<?php
+
+
+	////////////////////////////////////////////////////////
+	//// CUSTOM SIDEBARS
+	include('functions/custom-sidebars.php');
+
+
+?>

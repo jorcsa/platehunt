@@ -1,0 +1,14 @@
+<?php
+
+	
+	////////////////////////////////////////////////////////
+	//// IMAGE GALLERY SHORTCODE
+	include('shortcodes/image-gallery.php'); 
+
+	
+	////////////////////////////////////////////////////////
+	//// IMAGE GALLERY SHORTCODE
+	include('shortcodes/agent.php'); 
+
+
+?>

@@ -1,0 +1,7 @@
+.colorpicker-metabox { position: relative; padding: 12px 0; }
+.colorpicker-metabox label { font-weight: bold; }
+.colorpicker-metabox input { display: none; }
+.colorpicker-metabox-wrapper { float: right; width: 31px; height: 31px; background: #ffffff url(../images/colorpicker-wrapper-bg.gif) repeat-x top left; border-top: 1px solid #c1c1c1; border-left: 1px solid #c7c7c7; border-right: 1px solid #c7c7c7; border-bottom: 1px solid #cecece; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; margin: -7px 10px 0 0; box-shadow: 0 1px 0 #ffffff, inset 0 1px 3px #C2C2C2; cursor: pointer; }
+.colorpicker-metabox-wrapper span { display: block; width: 21px; height: 21px; margin: 5px 0 0 5px; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; box-shadow: 0 1px 3px #aaaaaa, inset 0 1px 0 rgba(255, 255, 255, .5); }
+.colorpicker-metabox-wrapper:hover, .colorpicker-clicked {  box-shadow: 0 1px 0 #ffffff, inset 0 1px 3px #999999; border: 1px solid #bbbbbb; }
+.colorpicker-metabox-wrapper:active {  box-shadow: 0 1px 0 #ffffff, inset 0 1px 3px #666666; border: 1px solid #999999; }

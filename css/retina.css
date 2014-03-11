@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ==== FOR IPADS & TABLETS ==== */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	
+	._sf_switch { background-image: url(../images/icons/switch-off@2x.png); background-size: 107px 36px; }
+	._sf_switch_handle { background-image: url(../images/icons/switch@2x.png); background-size: 54px 32px; }
+	._sf_switch_on { background-image: url(../images/icons/switch-on@2x.png); background-size: 107px 36px; }
+	
+}

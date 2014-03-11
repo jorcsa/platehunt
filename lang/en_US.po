@@ -1,0 +1,3727 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SpotFinder\n"
+"POT-Creation-Date: 2013-09-24 16:47+1000\n"
+"PO-Revision-Date: 2014-02-25 18:25+0100\n"
+"Last-Translator: Csaba <zuppaa@zuppaa.com>\n"
+"Language-Team: BTOA <themes@btoa.com.au>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:51
+msgid "404 - Page not Found"
+msgstr ""
+
+#: ../404.php:53
+msgid "Oops! Looks like we could not find what you were looking for."
+msgstr ""
+
+#: ../404.php:55
+msgid ""
+"Please re-check your URL or navigate our website using our menu at the top "
+"of the page."
+msgstr ""
+
+#: ../archive.php:62 ../blog.php:99 ../category.php:62 ../home.php:90
+#: ../index.php:70 ../search.php:70 ../single.php:52
+msgid "Sticky"
+msgstr ""
+
+#: ../archive.php:68 ../blog.php:105 ../category.php:68 ../home.php:96
+#: ../index.php:76 ../search.php:76
+msgid "On"
+msgstr ""
+
+#: ../archive.php:69 ../blog.php:106 ../category.php:69 ../home.php:97
+#: ../index.php:77 ../search.php:77
+msgid "By:"
+msgstr ""
+
+#: ../archive.php:70 ../blog.php:107 ../category.php:70 ../home.php:98
+msgid "<strong>no</strong>"
+msgstr ""
+
+#: ../archive.php:70 ../blog.php:107 ../category.php:70 ../home.php:98
+msgid "One"
+msgstr ""
+
+#: ../archive.php:70 ../blog.php:107 ../category.php:70 ../home.php:98
+msgid "comments"
+msgstr ""
+
+#: ../archive.php:70 ../blog.php:107 ../category.php:70 ../home.php:98
+msgid "comment"
+msgstr ""
+
+#: ../archive.php:71 ../blog.php:108 ../category.php:71 ../home.php:99
+msgid "Under"
+msgstr ""
+
+#: ../archive.php:73 ../blog.php:110 ../category.php:73 ../home.php:101
+#: ../index.php:81 ../search.php:81
+msgid "<strong>Tags:</strong> "
+msgstr "<strong>License plate number:</strong> "
+
+#: ../archive.php:81 ../blog.php:118 ../category.php:81 ../home.php:109
+#: ../index.php:89 ../search.php:89
+msgid "Read more &rarr;"
+msgstr ""
+
+#: ../archive.php:106 ../blog.php:146 ../category.php:106 ../home.php:137
+#: ../index.php:114 ../search.php:114
+msgid "No posts found."
+msgstr ""
+
+#: ../comments.php:9
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: ../comments.php:22
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:38
+msgid "No response to"
+msgstr ""
+
+#: ../comments.php:38
+msgid "One response to"
+msgstr ""
+
+#: ../comments.php:38
+msgid "% responses to"
+msgstr ""
+
+#: ../comments.php:52
+msgid "There are no responses so far."
+msgstr ""
+
+#: ../header.php:33
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../listings.php:130 ../taxonomy-spot_cats.php:121
+#: ../includes/search/functions/ajax.php:1441
+#: ../includes/search/functions/ajax.php:1445
+msgid "Oops! We couldn't find any results."
+msgstr ""
+
+#: ../listings.php:132 ../taxonomy-spot_cats.php:123
+msgid ""
+"Try re-filtering your search or navigate our menu to find what you are "
+"looking for."
+msgstr ""
+
+#: ../listings.php:134 ../taxonomy-spot_cats.php:125
+#: ../includes/search/functions/ajax.php:1441
+msgid "Notify me of future matching submissions"
+msgstr ""
+
+#: ../search.php:42
+msgid "Searching for "
+msgstr ""
+
+#: ../includes/functions.php:204
+msgid "You need to type in your name"
+msgstr ""
+
+#: ../includes/functions.php:205
+msgid "You need to type in your email address"
+msgstr ""
+
+#: ../includes/functions.php:206
+msgid "You need to type in your message"
+msgstr ""
+
+#: ../includes/functions.php:235 ../includes/spots/functions/ajax.php:906
+msgid "Sorry, you can not upload more than %num image(s)."
+msgstr ""
+
+#: ../includes/functions.php:238 ../includes/functions.php:239
+msgid "Sorry, you can not add more than %num tags."
+msgstr ""
+
+#: ../includes/functions.php:240
+msgid "Sorry, you have already chosen this tag."
+msgstr ""
+
+#: ../includes/functions.php:241
+msgid ""
+"Oops! Seems like there's something wrong. Please review your information."
+msgstr ""
+
+#: ../includes/functions.php:242
+msgid "Please type in a tag."
+msgstr ""
+
+#: ../includes/functions.php:244
+msgid "Draft successfully saved."
+msgstr ""
+
+#: ../includes/functions.php:248
+msgid "Oops, there are some errors in your submission."
+msgstr ""
+
+#: ../includes/functions.php:258
+msgid "Sorry, you cannot upload any more files."
+msgstr ""
+
+#: ../includes/backend/php/ajax-search.php:122
+msgid "Comment"
+msgstr ""
+
+#: ../includes/blog/comments-markup.php:29
+msgid "M d, Y"
+msgstr ""
+
+#: ../includes/blog/comments-markup.php:29
+msgid "H:i"
+msgstr ""
+
+#: ../includes/blog/comments-markup.php:35
+msgid "Your comment is awaiting approval."
+msgstr ""
+
+#: ../includes/blog/functions/meta/layout-post.php:35
+#: ../includes/page/functions/meta/layout.php:37
+msgid "Default ("
+msgstr ""
+
+#: ../includes/blog/functions/meta/layout-post.php:36
+#: ../includes/page/functions/meta/layout.php:38
+msgid "Right Side"
+msgstr ""
+
+#: ../includes/blog/functions/meta/layout-post.php:37
+#: ../includes/page/functions/meta/layout.php:39
+msgid "Left Side"
+msgstr ""
+
+#: ../includes/blog/functions/meta/layout-post.php:38
+#: ../includes/page/functions/meta/layout.php:40
+msgid "No Sidebar (Full Width)"
+msgstr ""
+
+#: ../includes/blog/functions/meta/sidebar-meta.php:129
+#: ../includes/page/functions/meta/sidebar-meta.php:139
+msgid "Default Template Sidebar"
+msgstr ""
+
+#: ../includes/blog/functions/meta/sidebar-meta.php:148
+#: ../includes/page/functions/meta/sidebar-meta.php:158
+msgid "(add new custom sidebar)"
+msgstr ""
+
+#: ../includes/bpanel/shortcodes/functions/contact/contact.php:31
+#: ../includes/rating/markup-form.php:116
+msgid "Name:"
+msgstr ""
+
+#: ../includes/bpanel/shortcodes/functions/contact/contact.php:38
+#: ../includes/general/shortcodes/agent.php:37
+#: ../includes/rating/markup-form.php:132
+#: ../includes/spots/markup-login.php:285
+msgid "Email:"
+msgstr ""
+
+#: ../includes/bpanel/shortcodes/functions/contact/contact.php:45
+msgid "Message:"
+msgstr ""
+
+#: ../includes/bpanel/shortcodes/functions/contact/contact.php:56
+msgid "Submit"
+msgstr ""
+
+#: ../includes/bpanel/shortcodes/functions/widgets/widgets.php:220
+msgid "Read more"
+msgstr ""
+
+#: ../includes/general/wp-pagenavi.php:347
+msgid "Page %CURRENT_PAGE% of %TOTAL_PAGES%"
+msgstr ""
+
+#: ../includes/general/wp-pagenavi.php:353
+msgid "first"
+msgstr ""
+
+#: ../includes/general/wp-pagenavi.php:355
+msgid "last"
+msgstr ""
+
+#: ../includes/general/wp-pagenavi.php:357
+msgid "next"
+msgstr ""
+
+#: ../includes/general/wp-pagenavi.php:359
+msgid "prev"
+msgstr ""
+
+#: ../includes/general/wp-pagenavi.php:361
+#: ../includes/general/wp-pagenavi.php:363
+msgid "..."
+msgstr ""
+
+#: ../includes/general/shortcodes/agent.php:35
+msgid "Phone:"
+msgstr ""
+
+#: ../includes/general/shortcodes/image-gallery.php:42
+msgid "view full &rarr;"
+msgstr ""
+
+#: ../includes/header/header-mobile.php:3
+msgid "Menu"
+msgstr ""
+
+#: ../includes/header/header-mobile.php:5
+msgid "Filter"
+msgstr ""
+
+#: ../includes/header/header-mobile.php:11
+msgid "Close Menu"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:26
+msgid "Home Posts"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:27
+msgid "Home Post"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:28
+#: ../includes/notifications/functions/post_type.php:17
+#: ../includes/rating/functions/post_type.php:17
+#: ../includes/search/functions/post_type.php:17
+#: ../includes/search_forms/functions/post_type.php:17
+#: ../includes/submission_fields/functions/post_type.php:17
+msgid "Add New"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:29
+msgid "Add New Home Post"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:30
+msgid "Edit Home Post"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:31
+msgid "New Home Post"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:32
+msgid "All Home Posts"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:33
+msgid "View Home Post"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:34
+msgid "Search Home Posts"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:35
+msgid "No Home Posts Found"
+msgstr ""
+
+#: ../includes/home/functions/post_type.php:36
+msgid "No Home Posts found in trash."
+msgstr ""
+
+#: ../includes/home/functions/meta/background-color.php:53
+msgid "Background Color"
+msgstr ""
+
+#: ../includes/home/functions/meta/background-color.php:66
+msgid "Top Border"
+msgstr ""
+
+#: ../includes/home/functions/meta/background-color.php:81
+msgid "Bottom Border"
+msgstr ""
+
+#: ../includes/notifications/markup-form.php:1
+msgid "Notify Me"
+msgstr ""
+
+#: ../includes/notifications/markup-form.php:16
+msgid "Subscribe and get notified once a matching submission is published."
+msgstr ""
+
+#: ../includes/notifications/markup-form.php:405
+#: ../includes/notifications/functions/ajax.php:53
+msgid "Your Name"
+msgstr ""
+
+#: ../includes/notifications/markup-form.php:407
+#: ../includes/notifications/functions/ajax.php:67
+#: ../includes/spots/markup-user-profile.php:121
+#: ../includes/widgets/signup/functions.php:83
+msgid "Email Address"
+msgstr ""
+
+#: ../includes/notifications/markup-form.php:409
+msgid "Notify Me!"
+msgstr ""
+
+#: ../includes/notifications/markup-form.php:415
+msgid ""
+"Thank you. You will now be notified of new published submissions matching "
+"your criteria."
+msgstr ""
+
+#: ../includes/notifications/functions/ajax.php:60
+msgid "Please type your name."
+msgstr ""
+
+#: ../includes/notifications/functions/ajax.php:74
+msgid "Please type your email."
+msgstr ""
+
+#: ../includes/notifications/functions/ajax.php:88
+msgid "Please type in a valid email."
+msgstr ""
+
+#: ../includes/notifications/functions/functions.php:57
+msgid "Thank you %name. You will no longer receive notifications."
+msgstr ""
+
+#: ../includes/notifications/functions/functions.php:208
+msgid ""
+"Dear %user,\n"
+"\t\t\n"
+"A new submission matching your chosen criteria has been published at "
+"%site_name.\n"
+"\n"
+"Visit %link to check it out!\n"
+"\n"
+"If you do not wish to be notified anymore please visit %unsubscribe_link\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/notifications/functions/functions.php:226
+#, php-format
+msgid "%site_name: Matching Submission"
+msgstr ""
+
+#: ../includes/notifications/functions/post_type.php:15
+msgid "User Notifications"
+msgstr ""
+
+#: ../includes/notifications/functions/post_type.php:16
+msgid "User Notification"
+msgstr ""
+
+#: ../includes/notifications/functions/post_type.php:18
+msgid "Add New User Notification"
+msgstr ""
+
+#: ../includes/notifications/functions/post_type.php:19
+msgid "Edit User Notification"
+msgstr ""
+
+#: ../includes/notifications/functions/post_type.php:20
+msgid "New User Notification"
+msgstr ""
+
+#: ../includes/notifications/functions/post_type.php:21
+msgid "All User Notifications"
+msgstr ""
+
+#: ../includes/notifications/functions/post_type.php:22
+msgid "View User Notification"
+msgstr ""
+
+#: ../includes/notifications/functions/post_type.php:23
+msgid "Search User Notifications"
+msgstr ""
+
+#: ../includes/notifications/functions/post_type.php:24
+msgid "No User Notifications Found"
+msgstr ""
+
+#: ../includes/notifications/functions/post_type.php:25
+msgid "No User Notifications found in trash."
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:21
+#: ../includes/spots/functions/meta/cart.php:31
+msgid "Submission payment"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:32
+#: ../includes/spots/functions/meta/cart.php:54
+msgid "Extra images in cart"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:37
+#: ../includes/spots/functions/meta/cart.php:59
+msgid "Extra images payment"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:48
+#: ../includes/spots/functions/meta/cart.php:98
+msgid "Extra tags in cart"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:53
+#: ../includes/spots/functions/meta/cart.php:103
+msgid "Extra tags payment"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:64
+#: ../includes/spots/functions/meta/cart.php:114
+msgid "Custom Pin in cart"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:69
+#: ../includes/spots/functions/meta/cart.php:119
+msgid "Custom Pin payment"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:80
+#: ../includes/spots/functions/meta/cart.php:130
+msgid "Custom Fields in cart"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:85
+#: ../includes/spots/functions/meta/cart.php:135
+msgid "Custom Fields payment"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:96
+#: ../includes/spots/functions/meta/cart.php:146
+msgid "Contact Form in cart"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:101
+#: ../includes/spots/functions/meta/cart.php:151
+msgid "Contact Form payment"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:139
+#: ../includes/spots/functions/meta/cart.php:189
+msgid "in cart"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/cart.php:144
+#: ../includes/spots/functions/meta/cart.php:194
+msgid "payment"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/metabox-categories-edit.php:98
+#: ../includes/notifications/functions/meta/metabox-categories.php:42
+#: ../includes/spots/functions/meta/metabox-categories-edit.php:98
+#: ../includes/spots/functions/meta/metabox-categories.php:42
+msgid "Default pin for this category"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/metabox-categories-edit.php:111
+#: ../includes/notifications/functions/meta/metabox-categories.php:52
+#: ../includes/spots/functions/meta/metabox-categories-edit.php:111
+#: ../includes/spots/functions/meta/metabox-categories.php:52
+msgid "Custom pin. Overrides default pin"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/metabox-categories-edit.php:138
+#: ../includes/notifications/functions/meta/metabox-categories.php:75
+#: ../includes/spots/functions/meta/metabox-categories-edit.php:138
+#: ../includes/spots/functions/meta/metabox-categories.php:75
+msgid "Same as homepage"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/metabox-categories-edit.php:150
+#: ../includes/notifications/functions/meta/metabox-categories.php:87
+#: ../includes/spots/functions/meta/metabox-categories-edit.php:150
+#: ../includes/spots/functions/meta/metabox-categories.php:87
+msgid "Which search form to display in this category page."
+msgstr ""
+
+#: ../includes/notifications/functions/meta/metabox-categories.php:48
+#: ../includes/spots/markup-add-new.php:674
+#: ../includes/spots/markup-edit.php:871
+#: ../includes/spots/functions/ajax-checkout.php:213
+#: ../includes/spots/functions/ajax-checkout.php:681
+#: ../includes/spots/functions/ajax.php:2242
+#: ../includes/spots/functions/meta/metabox-categories.php:48
+msgid "Custom Pin"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/metabox-categories.php:58
+#: ../includes/spots/functions/meta/metabox-categories.php:58
+msgid "Category Search Form"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/metaboxes.php:28
+msgid "User Email:"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/metaboxes.php:30
+msgid "User Email"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/metaboxes.php:35
+msgid "Subscription Key:"
+msgstr ""
+
+#: ../includes/notifications/functions/meta/metaboxes.php:37
+msgid "Key for unsubscription"
+msgstr ""
+
+#: ../includes/page/functions/meta/metaboxes-post.php:110
+#: ../includes/page/functions/meta/metaboxes.php:109
+msgid "Main Options"
+msgstr ""
+
+#: ../includes/page/functions/meta/metaboxes-post.php:112
+#: ../includes/page/functions/meta/metaboxes.php:111
+#: ../includes/spots/functions/meta/metaboxes.php:66
+msgid "Fancy Header"
+msgstr ""
+
+#: ../includes/page/functions/meta/metaboxes-post.php:114
+#: ../includes/page/functions/meta/metaboxes.php:113
+msgid "Listing Page Options"
+msgstr ""
+
+#: ../includes/page/functions/meta/metaboxes.php:115
+msgid "Submit Page Options"
+msgstr ""
+
+#: ../includes/rating/loop.php:23
+msgid " ago"
+msgstr ""
+
+#: ../includes/rating/loop.php:81
+msgid "Report Review"
+msgstr ""
+
+#: ../includes/rating/loop.php:85 ../includes/rating/loop.php:97
+msgid "Trash Review"
+msgstr ""
+
+#: ../includes/rating/loop.php:93
+msgid "This review has been flagged and will be reviewed by our team shortly."
+msgstr ""
+
+#: ../includes/rating/loop.php:97
+msgid "Restore Review"
+msgstr ""
+
+#: ../includes/rating/markup-form.php:23
+msgid "Leave a review for %post_title"
+msgstr ""
+
+#: ../includes/rating/markup-form.php:31
+msgid "You must be logged in to submit reviews."
+msgstr ""
+
+#: ../includes/rating/markup-form.php:43
+msgid "Login Here &rarr;"
+msgstr ""
+
+#: ../includes/rating/markup-form.php:82 ../includes/rating/markup-form.php:94
+msgid "Please rate this field."
+msgstr ""
+
+#: ../includes/rating/markup-form.php:90
+msgid "Overall Rating"
+msgstr ""
+
+#: ../includes/rating/markup-form.php:92
+msgid "Please select your overall rating"
+msgstr ""
+
+#: ../includes/rating/markup-form.php:118
+msgid "Type in your name."
+msgstr ""
+
+#: ../includes/rating/markup-form.php:134
+msgid "Type in a valid email."
+msgstr ""
+
+#: ../includes/rating/markup-form.php:142
+#: ../includes/spots/markup-add-new.php:794
+#: ../includes/spots/markup-edit.php:991
+#: ../includes/widgets/location/location.php:108
+#: ../includes/widgets/text/functions.php:68
+#: ../includes/widgets/tweets/functions.php:170
+msgid "Title:"
+msgstr ""
+
+#: ../includes/rating/markup-form.php:144
+msgid "Type in a title."
+msgstr ""
+
+#: ../includes/rating/markup-form.php:146
+msgid "Comments:"
+msgstr ""
+
+#: ../includes/rating/markup-form.php:148
+msgid "Type in a comment."
+msgstr ""
+
+#: ../includes/rating/markup-form.php:150
+msgid "Submit Review"
+msgstr ""
+
+#: ../includes/rating/markup-list.php:28
+msgid "Reviews for %post_title (%count)"
+msgstr ""
+
+#: ../includes/rating/markup-list.php:29
+msgid "No reviews for %post_title yet. Be the first to leave one!"
+msgstr ""
+
+#: ../includes/rating/markup-list.php:49
+msgid "Load More"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:36
+msgid "Please type in a valid email address"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:52
+msgid ""
+"An error occurred. We could not find the listing you are trying to review."
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:72
+#: ../includes/rating/functions/ajax.php:86
+msgid "Please ensure you have select a rating for all fields"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:102
+msgid "Please ensure you have select a valid rating"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:162
+msgid "Thank you! Your review has been successfully submitted"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:165
+msgid ""
+"Thank you! Your review has been successfully submitted and an admin will "
+"review it shortly."
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:180
+#, php-format
+msgid "Review submitted at %site_name"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:192
+#, php-format
+msgid "There was an error processing your review. Error: %error"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:233
+msgid ""
+"Dear Admin,\n"
+"\t\t\t\t\n"
+"Someone has flagged a review at %site_name.\n"
+"\n"
+"Please visit %link and review it."
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:244
+#, php-format
+msgid "Review flagged at %site_name"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:250
+msgid ""
+"Thank you. This review has been flagged and will be reviewed by our team "
+"shortly."
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:252
+#: ../includes/rating/functions/ajax.php:254
+msgid "Oops! We could not find the review you are looking for!"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:294
+msgid "Oops! You do not have enough permission to trash this review!"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:330
+msgid "Review successfully restored"
+msgstr ""
+
+#: ../includes/rating/functions/ajax.php:336
+msgid "Oops! You do not have enough permission to restore this review!"
+msgstr ""
+
+#: ../includes/rating/functions/functions.php:313
+msgid "Parent "
+msgstr ""
+
+#: ../includes/rating/functions/post_type.php:15
+#: ../includes/rating/functions/meta/metaboxes.php:26
+msgid "Ratings"
+msgstr ""
+
+#: ../includes/rating/functions/post_type.php:16
+msgid "Rating"
+msgstr ""
+
+#: ../includes/rating/functions/post_type.php:18
+msgid "Add New Rating"
+msgstr ""
+
+#: ../includes/rating/functions/post_type.php:19
+msgid "Edit Rating"
+msgstr ""
+
+#: ../includes/rating/functions/post_type.php:20
+msgid "New Rating"
+msgstr ""
+
+#: ../includes/rating/functions/post_type.php:21
+msgid "All Ratings"
+msgstr ""
+
+#: ../includes/rating/functions/post_type.php:22
+msgid "View Rating"
+msgstr ""
+
+#: ../includes/rating/functions/post_type.php:23
+msgid "Search Ratings"
+msgstr ""
+
+#: ../includes/rating/functions/post_type.php:24
+msgid "No Ratings Found"
+msgstr ""
+
+#: ../includes/rating/functions/post_type.php:25
+msgid "No Ratings found in trash."
+msgstr ""
+
+#: ../includes/rating/functions/taxonomy.php:11
+#: ../includes/rating/functions/taxonomy.php:13
+msgid "Rating Fields"
+msgstr ""
+
+#: ../includes/rating/functions/taxonomy.php:12
+#: ../includes/search/functions/meta/metaboxes.php:256
+msgid "Rating Field"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:28
+msgid "User Info"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:30
+msgid "Moderation"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:66
+msgid "Review of:"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:68
+msgid "Parent listings of this review"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:73
+msgid "Overall Rating:"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:76
+msgid "Overall Rating of this review"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:109
+#: ../includes/widgets/signup/functions.php:78
+#: ../includes/widgets/signup/functions.php:149
+msgid "Username"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:111
+msgid "Name of the person that submitted the review"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:116
+msgid "Username Email"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:118
+msgid "Email of the person that submitted the review"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:129
+msgid "Under Moderation"
+msgstr ""
+
+#: ../includes/rating/functions/meta/metaboxes.php:131
+msgid "If checked someone has reported this review."
+msgstr ""
+
+#: ../includes/search/listings-header-map.php:18
+#: ../includes/search/listings-header-standard.php:31
+#: ../includes/slider/slider.php:3
+msgid "Filter Listings"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:39
+msgid "Grid"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:41
+msgid "List"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:65
+msgid "Per Page:"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:109
+msgid "Sort By:"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:113
+msgid "Most Relevant"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:114
+msgid "Distance (Closest First)"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:115
+msgid "Date (Newest to Oldest)"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:116
+msgid "Date (Oldest to Newest)"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:125
+msgid "Rating (Highest to Lowest)"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:126
+msgid "Rating (Lowest to Highest)"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:166
+msgid "(Lowest to Highest)"
+msgstr ""
+
+#: ../includes/search/listings-subheader.php:167
+msgid "(Highest to Lowest)"
+msgstr ""
+
+#: ../includes/search/search-fields.php:3
+msgid "Finish Filtering"
+msgstr ""
+
+#: ../includes/search/search-fields.php:300
+#: ../includes/search/functions/meta/metaboxes.php:332
+msgid "All"
+msgstr ""
+
+#: ../includes/search/search-fields.php:408
+msgid "-"
+msgstr ""
+
+#: ../includes/search/search-fields.php:669
+msgid "to"
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:49
+#: ../includes/search/functions/ajax.php:80
+#: ../includes/search/functions/ajax.php:100
+#: ../includes/search/functions/ajax.php:134
+msgid "Any"
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:439
+msgid "Get Directions"
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:440
+msgid "Oops, directions from your location are not available"
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:451
+msgid "Oops, we couldn't find the post you are looking for."
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:734
+msgid "Something has gone wrong with our Google Places API Check."
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:737
+msgid "We could not find the place you are looking for."
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:740
+msgid ""
+"You have gone over your Google Places API Query limit for today. Error code "
+"223."
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:741
+msgid "The Google Places API Key you have provided is invalid."
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:742
+msgid "Search input is empty."
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:750
+msgid "Please provide a Google Places API Key"
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:790
+msgid "Invalid Keyword"
+msgstr "No match found"
+
+#: ../includes/search/functions/ajax.php:1452
+msgid ""
+"We found<strong> %count%</strong> listings matching your criteria <a href=\"#"
+"\" onclick=\"jQuery('#slider-map').fitMapToBounds(event);\">Show me all "
+"&rarr;</a>"
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:1453
+msgid ""
+"We found <strong>1</strong> listing matching your criteria <a href=\"#\" "
+"onclick=\"jQuery('#slider-map').fitMapToBounds(event);\">Show me all &rarr;</"
+"a>"
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:1454
+msgid "Oops, we could not find any matching listings."
+msgstr ""
+
+#: ../includes/search/functions/ajax.php:1486
+msgid "Form data is empty."
+msgstr ""
+
+#: ../includes/search/functions/post_type.php:15
+#: ../includes/spots/markup-add-new.php:849
+msgid "Search Fields"
+msgstr ""
+
+#: ../includes/search/functions/post_type.php:16
+msgid "Search Field"
+msgstr ""
+
+#: ../includes/search/functions/post_type.php:18
+msgid "Add New Search Field"
+msgstr ""
+
+#: ../includes/search/functions/post_type.php:19
+msgid "Edit Search Field"
+msgstr ""
+
+#: ../includes/search/functions/post_type.php:20
+msgid "New Search Field"
+msgstr ""
+
+#: ../includes/search/functions/post_type.php:21
+msgid "All Search Fields"
+msgstr ""
+
+#: ../includes/search/functions/post_type.php:22
+msgid "View Search Field"
+msgstr ""
+
+#: ../includes/search/functions/post_type.php:23
+msgid "Search Search Fields"
+msgstr ""
+
+#: ../includes/search/functions/post_type.php:24
+msgid "No Search Fields Found"
+msgstr ""
+
+#: ../includes/search/functions/post_type.php:25
+msgid "No Search Fields found in trash."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:246
+#: ../includes/submission_fields/functions/meta/metaboxes.php:32
+#: ../includes/submission_fields/functions/meta/metaboxes.php:104
+msgid "Field Type"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:249
+#: ../includes/submission_fields/functions/meta/metaboxes.php:107
+msgid "Text Field"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:250
+msgid "Dropdown Field"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:251
+msgid "Min. Value Field"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:252
+msgid "Max. Value Field"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:253
+msgid "Range Field"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:254
+msgid "Check Field"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:255
+msgid "Dependent Dropdown Field"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:259
+msgid "Type of your search field. "
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:269
+msgid "Load Suggestions"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:271
+#: ../includes/search/functions/meta/metaboxes.php:278
+msgid "Whether or not to show ajax suggestions as user is entering data."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:276
+msgid "Default Text"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:283
+msgid "Input Searches For:"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:290
+msgid ""
+"This is what the input will search for<br>Keywords searches for content in "
+"general such as title and text.<br>WP Tags will search for tags assigned to "
+"that spot."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:298
+#: ../includes/search/functions/meta/metaboxes.php:357
+#: ../includes/search/functions/meta/metaboxes.php:365
+#: ../includes/search/functions/meta/metaboxes.php:418
+msgid "This input type does not take any attributes"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:306
+#: ../includes/search/functions/meta/metaboxes.php:426
+msgid "Change map location upon selecting value"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:308
+#: ../includes/search/functions/meta/metaboxes.php:428
+msgid "Whether the map should change its center when the user select an item"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:313
+msgid "Dropdown Type"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:320
+msgid ""
+"If Custom Values you need to insert your field values manually. If "
+"categories please select them below"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:329
+msgid "Dropdown/Dependent Categories"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:348
+msgid ""
+"If you have selected categories as your dropdown type please select the "
+"categories you wish to include in yoru dropdown"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:373
+msgid "Minimum Value (Number)"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:375
+msgid "Minimum range allowed"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:380
+msgid "Maximum Value (Number)"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:382
+msgid "Maximum range allowed"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:387
+msgid "Increment Steps"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:389
+msgid ""
+"Increments. This will let your slider slide in steps, for instance in "
+"multiples of 20."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:394
+#: ../includes/search/functions/meta/metaboxes.php:666
+#: ../includes/search/functions/meta/metaboxes.php:753
+#: ../includes/search/functions/meta/metaboxes.php:827
+#: ../includes/search/functions/meta/metaboxes.php:960
+#: ../includes/search/functions/meta/metaboxes.php:1069
+#: ../includes/spots/functions/meta/metaboxes.php:1373
+#: ../includes/spots/functions/meta/metaboxes.php:1440
+#: ../includes/submission_fields/functions/meta/metaboxes.php:334
+msgid "Label"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:396
+msgid ""
+"This is the label of your range. Use % sign to represent the number. For "
+"example for prices use $%."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:401
+msgid "Simulate Price"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:403
+msgid "If enabled the numbers typed in this field will have commas."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:408
+msgid "Enable Input"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:410
+msgid ""
+"If this is enabled the user will be able to insert a value manually without "
+"using the slider bar."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:433
+msgid "Parent Dropdown:"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:471
+#: ../includes/search/functions/meta/metaboxes.php:477
+msgid "Select the parent dropdown."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:476
+msgid "You do not have any dropdown fields created."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:494
+#: ../includes/search/functions/meta/metaboxes.php:1102
+#: ../includes/search/functions/meta/metaboxes.php:1104
+#: ../includes/search/functions/meta/metaboxes.php:1106
+msgid "This input type does not take any values"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:550
+msgid "Add New Value"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:583
+#: ../includes/search/functions/meta/metaboxes.php:768
+#: ../includes/search/functions/meta/metaboxes.php:901
+#: ../includes/search/functions/meta/metaboxes.php:1010
+#: ../includes/submission_fields/functions/meta/metaboxes.php:275
+msgid "Insert Value"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:668
+#: ../includes/search/functions/meta/metaboxes.php:829
+#: ../includes/submission_fields/functions/meta/metaboxes.php:336
+msgid "Label of your dropdown"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:673
+#: ../includes/search/functions/meta/metaboxes.php:834
+msgid "Location Address"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:675
+#: ../includes/search/functions/meta/metaboxes.php:836
+msgid "Only used in case the options \"Change Location\" is enabled."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:679
+#: ../includes/search/functions/meta/metaboxes.php:756
+#: ../includes/search/functions/meta/metaboxes.php:840
+#: ../includes/spots/markup-add-new.php:615
+#: ../includes/spots/markup-edit.php:771
+msgid "Latitude"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:681
+#: ../includes/search/functions/meta/metaboxes.php:685
+#: ../includes/search/functions/meta/metaboxes.php:842
+#: ../includes/search/functions/meta/metaboxes.php:846
+msgid "Automatically gotten from address input or get it from"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:683
+#: ../includes/search/functions/meta/metaboxes.php:759
+#: ../includes/search/functions/meta/metaboxes.php:844
+#: ../includes/spots/markup-add-new.php:624
+#: ../includes/spots/markup-edit.php:780
+msgid "Longitude"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:687
+#: ../includes/search/functions/meta/metaboxes.php:762
+#: ../includes/search/functions/meta/metaboxes.php:848
+msgid "Zoom Level"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:689
+#: ../includes/search/functions/meta/metaboxes.php:850
+msgid "Value between 1 and 20 for your zoom. Leave blank to not change zoom"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:694
+#: ../includes/search/functions/meta/metaboxes.php:855
+msgid "Radius"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:729
+msgid ""
+"Please select a parent dropdown in your attributes, save the field and edit "
+"this area."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:746
+#: ../includes/search/functions/meta/metaboxes.php:888
+#: ../includes/search/functions/meta/metaboxes.php:997
+msgid "Values"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:962
+msgid "Label of your min value"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:964
+msgid "Minimum Value (Integer)"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:966
+msgid ""
+"This is your minimum value. This must be an integer (a number). Leave Blank "
+"to not include"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1071
+msgid "Label of your max value"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1073
+msgid "Maximum Value (Integer)"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1075
+msgid ""
+"This is your maximum value. This must be an integer (a number). Leave Blank "
+"to not include"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1116
+msgid "Enable on Map Overlay"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1118
+msgid "Display rating on overlay??"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1127
+msgid "Enable on Front-End"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1129
+msgid "DIsplay this value in front end?"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1134
+#: ../includes/submission_fields/functions/meta/metaboxes.php:475
+msgid "Front End Markup"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1136
+msgid ""
+"This is the markup that is displayed in your front end. You can use the "
+"variable %% to display the chosen value.<br>For example to display the price "
+"you can type \"Price: $%%\" where %% will be replaced with the chosen value "
+"if provided.<br>\n"
+"\t\t\t\tYou can also use %_*VAL_% to multiply an element based on the value. "
+"For example if your field is a number, use \"%_*VAL_% ELEMENT\" to multiple "
+"the string ELEMENT by the amount of times the user has chosen."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1142
+msgid "Enable on Sort By"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1144
+msgid ""
+"If enabled the user will be able to sort his listing results by this field. "
+"Please note that this will only work for numeric fields such as range, "
+"minimum and maximum values."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1158
+msgid "Enable Field on Public Submissions"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1160
+msgid ""
+"If enabled, users submitting propertie swill be able to select the value for "
+"this field"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1165
+#: ../includes/submission_fields/functions/meta/metaboxes.php:120
+msgid "Required"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1167
+msgid "Is this field required?"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1172
+#: ../includes/spots/markup-add-new.php:414
+#: ../includes/spots/markup-add-new.php:485
+#: ../includes/spots/markup-edit.php:431
+#: ../includes/spots/functions/taxonomy.php:36
+#: ../includes/spots/functions/taxonomy.php:38
+#: ../includes/submission_fields/functions/meta/metaboxes.php:127
+msgid "Categories"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1175
+#: ../includes/submission_fields/functions/meta/metaboxes.php:130
+msgid "All Categories"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1195
+#: ../includes/submission_fields/functions/meta/metaboxes.php:150
+msgid ""
+"Allow this field to be set only with the specified categories. This means "
+"that this search field will only be available for selection in case the user "
+"has checked the selected category."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1200
+#: ../includes/spots/functions/meta/metaboxes.php:1700
+#: ../includes/spots/functions/meta/metaboxes.php:1738
+#: ../includes/submission_fields/markup-file-submission.php:119
+#: ../includes/submission_fields/markup-file-submission.php:181
+msgid "Description"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1202
+msgid "Description for this field shown in backend"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1207
+msgid "Dropdown Multiple or Single"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1210
+msgid "Single"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1211
+msgid "Multiple"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1214
+msgid "Enable users to select one value or multiple values for this field?"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1219
+msgid "Search field price"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1221
+msgid "Enter a value to charge users to set this custom field."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1226
+msgid "Cart description"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1228
+msgid "Message displayed when user adds this to cart."
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1240
+msgid "Your Google Places API Key"
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1242
+msgid "If you do not have a google places API please visit "
+msgstr ""
+
+#: ../includes/search/functions/meta/metaboxes.php:1247
+msgid ""
+"Which country to retrieve results from (Use a ISO 2-character country code)"
+msgstr ""
+
+#: ../includes/search_forms/functions/ajax.php:37
+#: ../includes/search_forms/functions/ajax.php:89
+#: ../includes/search_forms/functions/meta/metaboxes.php:150
+#: ../includes/search_forms/functions/meta/metaboxes.php:212
+msgid "Is one of the following:"
+msgstr ""
+
+#: ../includes/search_forms/functions/ajax.php:80
+#: ../includes/search_forms/functions/ajax.php:120
+#: ../includes/search_forms/functions/meta/metaboxes.php:203
+msgid "Show this field if nothing is selected."
+msgstr ""
+
+#: ../includes/search_forms/functions/post_type.php:15
+msgid "Search Forms"
+msgstr ""
+
+#: ../includes/search_forms/functions/post_type.php:16
+msgid "Search Form"
+msgstr ""
+
+#: ../includes/search_forms/functions/post_type.php:18
+msgid "Add New Search Form"
+msgstr ""
+
+#: ../includes/search_forms/functions/post_type.php:19
+msgid "Edit Search Form"
+msgstr ""
+
+#: ../includes/search_forms/functions/post_type.php:20
+msgid "New Search Form"
+msgstr ""
+
+#: ../includes/search_forms/functions/post_type.php:21
+msgid "All Search Forms"
+msgstr ""
+
+#: ../includes/search_forms/functions/post_type.php:22
+msgid "View Search Form"
+msgstr ""
+
+#: ../includes/search_forms/functions/post_type.php:23
+msgid "Search Search Forms"
+msgstr ""
+
+#: ../includes/search_forms/functions/post_type.php:24
+msgid "No Search Forms Found"
+msgstr ""
+
+#: ../includes/search_forms/functions/post_type.php:25
+msgid "No Search Forms found in trash."
+msgstr ""
+
+#: ../includes/search_forms/functions/meta/metaboxes.php:23
+msgid "1) Select your initial column layout:"
+msgstr ""
+
+#: ../includes/search_forms/functions/meta/metaboxes.php:27
+msgid "1 Columns"
+msgstr ""
+
+#: ../includes/search_forms/functions/meta/metaboxes.php:28
+msgid "2 Columns"
+msgstr ""
+
+#: ../includes/search_forms/functions/meta/metaboxes.php:29
+msgid "3 Columns"
+msgstr ""
+
+#: ../includes/search_forms/functions/meta/metaboxes.php:30
+msgid "4 Columns"
+msgstr ""
+
+#: ../includes/search_forms/functions/meta/metaboxes.php:31
+msgid "5 Columns"
+msgstr ""
+
+#: ../includes/search_forms/functions/meta/metaboxes.php:408
+msgid "Divider"
+msgstr ""
+
+#: ../includes/search_forms/functions/meta/metaboxes.php:422
+msgid "Open Column"
+msgstr ""
+
+#: ../includes/search_forms/functions/meta/metaboxes.php:436
+#: ../includes/widgets/columns/functions.php:117
+msgid "Close Column"
+msgstr ""
+
+#: ../includes/slider/markup-map-featured.php:103
+msgid "View Property"
+msgstr ""
+
+#: ../includes/slider/markup-map.php:303
+msgid "Resize Me"
+msgstr ""
+
+#: ../includes/slider/slider.php:54
+msgid "View as list"
+msgstr ""
+
+#: ../includes/spots/loop.php:51
+#: ../includes/spots/markup-user-submissions.php:68
+#: ../includes/spots/functions/functions.php:1104
+msgid "Featured"
+msgstr ""
+
+#: ../includes/spots/loop.php:70 ../includes/spots/loop.php:108
+msgid "View more"
+msgstr ""
+
+#: ../includes/spots/loop.php:72 ../includes/spots/loop.php:110
+msgid "Show on map"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:9
+#: ../includes/spots/markup-user-panel.php:19
+msgid "Welcome!"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:9
+#: ../includes/spots/markup-user-panel.php:19
+msgid ""
+"This is your submissions admin page. Here you can manage your submissions "
+"and details and view your submissions page views."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:60
+#: ../includes/spots/markup-user-submissions.php:27
+msgid "Submit New"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:65
+#: ../includes/spots/markup-add-new.php:1380
+#: ../includes/spots/markup-add-new.php:1394
+#: ../includes/spots/markup-edit.php:69
+msgid "Save Draft"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:66
+#: ../includes/spots/markup-edit.php:70 ../includes/spots/markup-edit.php:1652
+#: ../includes/spots/markup-edit.php:1671
+msgid "Publish"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:66
+#: ../includes/spots/markup-edit.php:70 ../includes/spots/markup-edit.php:1652
+#: ../includes/spots/markup-edit.php:1671
+msgid "Submit for review"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:106
+#: ../includes/spots/markup-edit.php:109
+msgid "Enter your title"
+msgstr ""
+"Enter your car's type and license plate number. E.g Chrysler Voyager 1ABC234"
+
+#: ../includes/spots/markup-add-new.php:107
+#: ../includes/spots/markup-add-new.php:123
+#: ../includes/spots/markup-edit.php:110 ../includes/spots/markup-edit.php:124
+msgid "Type in your title."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:109
+#: ../includes/spots/functions/meta/metaboxes.php:1694
+#: ../includes/spots/functions/meta/metaboxes.php:1732
+#: ../includes/widgets/news/functions.php:112
+#: ../includes/widgets/popular-spots/functions.php:126
+#: ../includes/widgets/related-spots/functions.php:211
+msgid "Title"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:109
+msgid ""
+"Start by entering yout submission title. This is the main title of your "
+"submission used throughout the website. Enter your business name or location "
+"address."
+msgstr "Start by entering your car's type and license plate number."
+
+#: ../includes/spots/markup-add-new.php:122
+#: ../includes/spots/markup-add-new.php:125
+#: ../includes/spots/markup-edit.php:123
+msgid "Slogan"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:125
+msgid ""
+"Your slogan is a short title used to promote and describe your submission "
+"thoughout the website. It works like a secondary title. Choose something "
+"witty and catchy!"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:146
+msgid "Content"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:146
+msgid ""
+"Here you can write more about your submission. Include HTML tags or use the "
+"WYSIWYG editor to style your content. It is a good idea to be as descriptive "
+"as possible. The more detailed your information is, the less questions and "
+"doubts about your submission your users will have."
+msgstr ""
+"Here you can write more about your car and the circumstances of the theft. "
+"It is a good idea to be as descriptive as possible. The more detailed your "
+"information is, the easier will be for Hunters to recognize and identify "
+"your car."
+
+#: ../includes/spots/markup-add-new.php:173
+#: ../includes/spots/markup-edit.php:170
+msgid "Images"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:189
+#: ../includes/spots/markup-edit.php:186
+msgid "Upload up to %num images for just %price"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:193
+#: ../includes/spots/markup-add-new.php:315
+#: ../includes/spots/markup-add-new.php:532
+#: ../includes/spots/markup-add-new.php:694
+#: ../includes/spots/markup-add-new.php:771
+#: ../includes/spots/markup-add-new.php:951
+#: ../includes/spots/markup-add-new.php:1322
+#: ../includes/spots/markup-edit.php:190 ../includes/spots/markup-edit.php:328
+#: ../includes/spots/markup-edit.php:675 ../includes/spots/markup-edit.php:891
+#: ../includes/spots/markup-edit.php:967
+#: ../includes/spots/markup-edit.php:1198
+#: ../includes/spots/markup-edit.php:1587
+msgid "Please checkout before updating this."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:208
+#: ../includes/spots/markup-edit.php:205
+msgid "Upload up to %num image(s)."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:215
+#: ../includes/spots/markup-edit.php:210
+msgid "Upload Images"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:218
+msgid "Upload new images"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:218
+msgid ""
+"Click the upload images button to start uploading your images. You can "
+"upload multiple images at the same time. By uploading more than one image "
+"you automatically create an image gallery within your submission page. "
+"Maximum size per image is 5mb."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:251
+msgid "Image Gallery"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:251
+msgid ""
+"After uploading your images you can click and drag your uploaded images to "
+"re-arrange them. Your first image will be used as a placeholder throughout "
+"the website and the following images are automatically added to your gallery "
+"image."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:285
+#: ../includes/spots/markup-add-new.php:369
+#: ../includes/spots/markup-edit.php:298
+#: ../includes/spots/functions/ajax-checkout.php:153
+#: ../includes/spots/functions/ajax-checkout.php:560
+#: ../includes/spots/functions/ajax-checkout.php:586
+#: ../includes/spots/functions/ajax.php:2196
+msgid "Featured Submission"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:311
+#: ../includes/spots/markup-edit.php:324
+msgid ""
+"Set your submission as featured for just %price, and appear on top of "
+"searches!"
+msgstr ""
+"Set your submission as featured for just %price, and enable a permanent "
+"image pin on your submission!"
+
+#: ../includes/spots/markup-add-new.php:325
+#: ../includes/spots/markup-edit.php:338
+msgid ""
+"Featured submissions have a lot more visibility than others. Enable a "
+"permanent image pin on your submission plus appear on top of listings!"
+msgstr ""
+"Featured submissions have a lot more visibility than others. Enable a "
+"permanent image pin on your submission plus appear on top of listings!"
+
+#: ../includes/spots/markup-add-new.php:369
+msgid ""
+"By setting your submission as featured you automatically get a permanent pin "
+"on our map with your main image and you also appear on top of our listings "
+"results, generating more visitors and getting more visibility to your "
+"submission."
+msgstr ""
+"By setting your submission as featured you automatically get a permanent pin "
+"on our map with your main image and you also appear on top of our listings "
+"results and will occasionally appear on the front page of Platehunt , "
+"generating more visitors and getting more visibility to your submission."
+
+#: ../includes/spots/markup-add-new.php:414
+#: ../includes/spots/markup-edit.php:431
+#: ../includes/spots/functions/taxonomy.php:37
+msgid "Category"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:425
+#: ../includes/spots/markup-edit.php:442
+msgid "Select a category."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:485
+msgid ""
+"Select the appropriate category in which your submission best fits in. "
+"Categories are used to organise submissions, so make sure you choose the "
+"right one to maximise your page views."
+msgstr "Select the appropriate category in which your submission best fits in."
+
+#: ../includes/spots/markup-add-new.php:512
+#: ../includes/spots/markup-add-new.php:573
+#: ../includes/spots/markup-edit.php:655
+#: ../includes/spots/functions/taxonomy.php:13
+#: ../includes/spots/functions/taxonomy.php:15
+msgid "Tags"
+msgstr "License plate number"
+
+#: ../includes/spots/markup-add-new.php:528
+#: ../includes/spots/markup-edit.php:671
+msgid "Add up to %num for just %price"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:558
+#: ../includes/spots/markup-edit.php:701
+msgid "Add up to %num tags."
+msgstr "Add only %num value."
+
+#: ../includes/spots/markup-add-new.php:570
+#: ../includes/spots/markup-edit.php:727
+msgid "Tag Name"
+msgstr "Enter only numbers and letters! E.g. 1ABC234"
+
+#: ../includes/spots/markup-add-new.php:571
+#: ../includes/spots/markup-edit.php:728
+msgid "Add Tag"
+msgstr "Add license plate number"
+
+#: ../includes/spots/markup-add-new.php:573
+msgid ""
+"Assign relevant tags to your submission. Doing so helps you get more "
+"visibility throughout the website such as more views on search listings and "
+"appear on related submissions."
+msgstr ""
+"It's important to add you license plate number correctly as this value will "
+"be used for searching. Enter only numbers and letters! E.g. 1ABC234"
+
+#: ../includes/spots/markup-add-new.php:597
+#: ../includes/spots/markup-add-new.php:611
+#: ../includes/spots/markup-edit.php:755
+#: ../includes/spots/functions/meta/metaboxes.php:50
+msgid "Location"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:607
+#: ../includes/spots/markup-edit.php:765
+msgid "Enter address"
+msgstr "Enter address (Be specific!)"
+
+#: ../includes/spots/markup-add-new.php:608
+#: ../includes/spots/markup-edit.php:766
+msgid "Get pinpoint"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:609
+#: ../includes/spots/markup-edit.php:767
+msgid "Please type in the address."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:611
+msgid ""
+"Enter your submission address and click \"Get Pinpoint\" to automatically "
+"get your address geolocation. If you are unable to pinpoint your address, "
+"type in your city and click and drag the pin o t he map to pinpoint where "
+"you are located."
+msgstr ""
+"Enter your vehicle's last seen address and click \"Get Pinpoint\" to "
+"automatically get your address geolocation. (If you are unable to pinpoint "
+"your address, type in your city and click and drag the pin on the map to "
+"pinpoint where you are located.)"
+
+#: ../includes/spots/markup-add-new.php:617
+#: ../includes/spots/markup-edit.php:773
+msgid "Please type in a valid latitude."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:626
+#: ../includes/spots/markup-edit.php:782
+msgid "Please type in a valid longitude."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:675
+#: ../includes/spots/markup-edit.php:872
+msgid "Pin Image URL"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:690
+#: ../includes/spots/markup-edit.php:887
+msgid "Set your own custom pin for just %price"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:744
+#: ../includes/spots/markup-add-new.php:807
+#: ../includes/spots/markup-edit.php:940
+#: ../includes/spots/functions/ajax-checkout.php:239
+#: ../includes/spots/functions/ajax-checkout.php:691
+#: ../includes/spots/functions/ajax.php:2265
+#: ../includes/spots/functions/meta/metaboxes.php:62
+msgid "Custom Fields"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:767
+#: ../includes/spots/markup-edit.php:963
+msgid "Assign unlimited custom fields for just %price"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:792
+#: ../includes/spots/markup-edit.php:989
+msgid "Add New:"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:796
+#: ../includes/spots/markup-edit.php:993
+msgid "Title must not be empty"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:798
+#: ../includes/spots/markup-edit.php:995
+msgid "Value:"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:800
+#: ../includes/spots/markup-edit.php:997
+msgid "Value must not be empty"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:802
+#: ../includes/spots/markup-edit.php:999
+#: ../includes/spots/functions/meta/metaboxes.php:1379
+msgid "Add Custom Field"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:807
+msgid ""
+"Custom fields are a way of displaying key information about your submission. "
+"Add options such as opening hours or key features. This helps users to find "
+"important information easier and faster."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:849
+msgid ""
+"Assign your search fields in order to get your submission to show up on "
+"listings. The more accurate the information provided, the more page views "
+"and conversions you get."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:972
+#: ../includes/spots/markup-add-new.php:1033
+#: ../includes/spots/markup-edit.php:1219
+#: ../includes/spots/markup-edit.php:1288
+#, php-format
+msgid "Please select a %field."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:1028
+#: ../includes/spots/markup-edit.php:1283
+msgid "Please select your %parent_field first."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:1209
+#: ../includes/spots/markup-add-new.php:1233
+#: ../includes/spots/markup-edit.php:1471
+#: ../includes/spots/markup-edit.php:1495
+#, php-format
+msgid "Please type in a valid %field value."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:1294
+#: ../includes/spots/markup-add-new.php:1344
+#: ../includes/spots/markup-edit.php:1559
+#: ../includes/spots/functions/ajax-checkout.php:265
+#: ../includes/spots/functions/ajax-checkout.php:701
+msgid "Contact Form"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:1318
+#: ../includes/spots/markup-edit.php:1583
+msgid "Enable a contact form on your submission for just %price"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:1328
+#: ../includes/spots/markup-edit.php:1593
+msgid ""
+"Display a contact form in your submission. emails are sent directly to your "
+"email address."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:1344
+msgid ""
+"By enabling a contact form on your page, users will find a contact form when "
+"viewing your submission. The contact form sends out the email directly to "
+"your inbox."
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:1407
+msgid "Save or Submit!"
+msgstr ""
+
+#: ../includes/spots/markup-add-new.php:1407
+msgid ""
+"Finally, choose whether you want to save your submission to finish it off "
+"later, or go ahead and submit it straight away."
+msgstr ""
+
+#: ../includes/spots/markup-cart.php:41
+msgid "Cart Total:"
+msgstr ""
+
+#: ../includes/spots/markup-cart.php:43
+msgid ""
+"Please check out before submitting. When checking out your submission is "
+"saved as a draft and all additionals will be made available after completing "
+"payment."
+msgstr ""
+
+#: ../includes/spots/markup-cart.php:45
+msgid "Checkout now"
+msgstr ""
+
+#: ../includes/spots/markup-edit.php:64
+#: ../includes/spots/markup-user-submissions.php:87
+msgid "Edit"
+msgstr ""
+
+#: ../includes/spots/markup-edit.php:70 ../includes/spots/markup-edit.php:1652
+#: ../includes/spots/markup-edit.php:1671
+msgid "Finish Edit"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:52
+msgid "Hey There! Please login or register"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:65 ../includes/spots/user-panel.php:39
+msgid "Public submissions are now closed."
+msgstr ""
+
+#: ../includes/spots/markup-login.php:121
+msgid "Login or Register with facebook"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:128
+msgid "Or"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:197
+msgid "Reset Your Password"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:199
+msgid "Enter your new password."
+msgstr ""
+
+#: ../includes/spots/markup-login.php:205
+msgid "New Password:"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:212
+msgid "Confirm New Password:"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:221
+msgid "Reset Password"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:236
+msgid "Login"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:238
+msgid "Login using your already existent credentials."
+msgstr ""
+
+#: ../includes/spots/markup-login.php:244
+#: ../includes/spots/markup-login.php:278
+msgid "Username:"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:251
+msgid "Password:"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:258
+msgid "Log in now"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:260
+msgid "Lost your password?"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:269
+msgid "Register"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:271
+msgid "Your password will be emailed to you."
+msgstr ""
+
+#: ../includes/spots/markup-login.php:292
+#: ../includes/widgets/signup/functions.php:61
+msgid "Sign Up"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:303
+msgid "Recover Your Password"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:305
+msgid "Enter your username or email address."
+msgstr ""
+
+#: ../includes/spots/markup-login.php:311
+msgid "Email Address or Username:"
+msgstr ""
+
+#: ../includes/spots/markup-login.php:318
+msgid "Recover Password"
+msgstr ""
+
+#: ../includes/spots/markup-spot-views.php:17
+msgid "Recent Page Views:"
+msgstr ""
+
+#: ../includes/spots/markup-spot-views.php:243
+msgid "Unique Views"
+msgstr ""
+
+#: ../includes/spots/markup-spot-views.php:246
+msgid "Date"
+msgstr ""
+
+#: ../includes/spots/markup-spot-views.php:277
+msgid "Toggle All"
+msgstr ""
+
+#: ../includes/spots/markup-user-panel.php:20
+msgid "Logout or Submit"
+msgstr ""
+
+#: ../includes/spots/markup-user-panel.php:20
+msgid ""
+"Click here to log out or start a new submission. After you start a new "
+"submission you can save it as draft for later or finish it up and submit "
+"straight away!"
+msgstr ""
+
+#: ../includes/spots/markup-user-panel.php:21
+msgid "Edit Profile"
+msgstr ""
+
+#: ../includes/spots/markup-user-panel.php:21
+msgid ""
+"Here you can edit your basic profile information. It is good to keep your "
+"profile up to date as this information is used whenever we get in contact "
+"with you"
+msgstr ""
+
+#: ../includes/spots/markup-user-panel.php:22
+#: ../includes/spots/markup-user-password.php:9
+#: ../includes/spots/markup-user-password.php:124
+msgid "Change Password"
+msgstr ""
+
+#: ../includes/spots/markup-user-panel.php:22
+msgid ""
+"Here you can also edit your password. If you have signed up via facebook "
+"your password was sent to your email."
+msgstr ""
+
+#: ../includes/spots/markup-user-panel.php:40
+msgid "Submission published!"
+msgstr ""
+
+#: ../includes/spots/markup-user-panel.php:41
+msgid "Submission successful!"
+msgstr ""
+
+#: ../includes/spots/markup-user-password.php:79
+msgid "Password changed successfully. Redirecting you..."
+msgstr ""
+
+#: ../includes/spots/markup-user-password.php:105
+msgid "New Password"
+msgstr ""
+
+#: ../includes/spots/markup-user-password.php:112
+msgid "Confirm New Password"
+msgstr ""
+
+#: ../includes/spots/markup-user-password.php:119
+msgid "Current Password"
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:9
+msgid "Edit your profile"
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:77
+msgid "Profile edited successfully."
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:107
+msgid "First Name"
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:114
+msgid "Last Name"
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:132
+msgid "Phone Number"
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:139
+msgid "Title / Position"
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:144
+#: ../includes/spots/markup-user-profile.php:218
+msgid "Update Profile"
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:182
+#: ../includes/spots/markup-user-profile.php:183
+msgid "Upload Picture"
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:187
+msgid "Remove"
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:197
+msgid "Short Bio (250 chars)"
+msgstr ""
+
+#: ../includes/spots/markup-user-profile.php:205
+msgid ""
+"Check this box to make your profile publicly available on your listings page."
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:21
+msgid "Welcome back"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:26
+msgid "Logout"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:48
+msgid "Your Submissions"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:50
+msgid "Submitted on"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:52
+msgid "Status"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:54
+msgid "Page Views:"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:56
+msgid "Actions"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:71
+msgid "View Listing"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:78
+#: ../includes/spots/functions/meta/metaboxes.php:484
+msgid "Expires:"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:79
+msgid "Featured Until:"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:88
+msgid "Are you sure you want to trash your submission?"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:88
+msgid "Delete"
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:110
+msgid "Oops! You have not submitted anything yet."
+msgstr ""
+
+#: ../includes/spots/markup-user-submissions.php:110
+msgid "Begin your first submission &rarr;"
+msgstr ""
+
+#: ../includes/spots/single-contact-form.php:7
+#, php-format
+msgid "Contact %spot_name:"
+msgstr "Contact %spot_name 's owner:"
+
+#: ../includes/spots/single-contact-form.php:23
+msgid "Your name"
+msgstr ""
+
+#: ../includes/spots/single-contact-form.php:25
+msgid "Email address"
+msgstr ""
+
+#: ../includes/spots/single-contact-form.php:27
+msgid "Message"
+msgstr ""
+
+#: ../includes/spots/single-contact-form.php:29
+msgid "Send"
+msgstr ""
+
+#: ../includes/spots/single-contact-form.php:38
+msgid "Thank you! Your message has been successfully sent."
+msgstr ""
+
+#: ../includes/spots/single-rating.php:6
+msgid "Overall rating of "
+msgstr ""
+
+#: ../includes/spots/user-panel.php:37
+msgid "You have exceeded your submission limit."
+msgstr ""
+
+#: ../includes/spots/user-panel.php:60
+msgid "Oops! You do not have enough permissions to edit this."
+msgstr ""
+
+#: ../includes/spots/user-panel.php:64 ../includes/spots/user-panel.php:68
+msgid "Sorry, we could not find what you are trying to edit."
+msgstr ""
+
+#: ../includes/spots/user-panel.php:70
+msgid "Editing is not allowed after your submission has been approved."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:69
+msgid "Publish your submission at %site_name for %num days."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:73
+#: ../includes/spots/functions/ajax.php:1996
+#, php-format
+msgid "Submission at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:88
+#: ../includes/spots/functions/ajax-checkout.php:449
+msgid "Renew your submission at %site_name every %num days."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:112
+#: ../includes/spots/functions/ajax-checkout.php:549
+#: ../includes/spots/functions/ajax.php:2159
+msgid "Extra Images"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:113
+#: ../includes/spots/functions/ajax.php:2160
+msgid "Upload up to %num images in your submission."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:144
+msgid "Set your submission as featured at %site_name for %num days"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:148
+#, php-format
+msgid "Set your submission as featured at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:163
+#: ../includes/spots/functions/ajax-checkout.php:571
+msgid "Renew your submission as featured at %site_name every %num days"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:187
+#: ../includes/spots/functions/ajax-checkout.php:671
+#: ../includes/spots/functions/ajax.php:2219
+msgid "Extra Tags"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:188
+#: ../includes/spots/functions/ajax.php:2220
+msgid "Add up to %num tags in your submission."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:214
+#: ../includes/spots/functions/ajax.php:2243
+msgid "Assign a custom pin to your submission."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:240
+#: ../includes/spots/functions/ajax.php:2266
+msgid "Assign custom fields to your submission."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:266
+#: ../includes/spots/functions/ajax.php:2289
+msgid "Enable a contact form in your submission."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:357
+msgid "Redirecting you to PayPal..."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:362
+#: ../includes/spots/functions/ajax-checkout.php:370
+msgid ""
+"There was an error processing your request. Please contact the site "
+"administrator. Error Code %num."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:419
+msgid ""
+"Your payment has been successfully processed. You can now add your "
+"additionals."
+msgstr ""
+"Your payment has been successfully processed. You can now publish your "
+"submission!"
+
+#: ../includes/spots/functions/ajax-checkout.php:438
+#: ../includes/spots/functions/ajax.php:2136
+msgid "Submission"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:483
+msgid ""
+"Dear Admin,\n"
+"\t\t\t\t\t\t\t\t\n"
+"A new recurring payment has been made at %site_name:\n"
+"\n"
+"Recurring payment for: Submission\n"
+"Post: %post_title\n"
+"Profile ID: %profile\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:500
+#: ../includes/spots/functions/ajax-checkout.php:524
+#: ../includes/spots/functions/ajax-checkout.php:622
+#: ../includes/spots/functions/ajax-checkout.php:646
+#, php-format
+msgid "Recurring Payment Created at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:509
+msgid ""
+"Dear %user,\n"
+"\t\t\t\t\t\t\t\t\n"
+"A new recurring payment has been created for you at %site_name.\n"
+"\n"
+"Recurring payment for: Submission\n"
+"Post: %post_title\n"
+"Profile ID: %profile"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:533
+#: ../includes/spots/functions/ajax-checkout.php:655
+msgid ""
+"Your initial payment was processed but we were unable to create a recurring "
+"payment for your submission."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:605
+msgid ""
+"Dear Admin,\n"
+"\t\t\t\t\t\t\t\t\n"
+"A new recurring payment has been made at %site_name:\n"
+"\n"
+"Recurring payment for: Featured Listing\n"
+"Post: %post_title\n"
+"Profile ID: %profile\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:631
+msgid ""
+"Dear %user,\n"
+"\t\t\t\t\t\t\t\t\n"
+"A new recurring payment has been created for you at %site_name.\n"
+"\n"
+"Recurring payment for: Featured Listing\n"
+"Post: %post_title\n"
+"Profile ID: %profile"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:731
+msgid ""
+"Dear Admin,\n"
+"\t\t\t\t\n"
+"A payment for extras has been made at %site_name:\n"
+"\n"
+"Payment by: %user\n"
+"Extras added to post: %post_title\n"
+"Post ID: %post_id\n"
+"Extras added: %extras\n"
+"Payment Total: %total\n"
+"Transaction ID: %trans_id"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:752
+#, php-format
+msgid "Payment processed at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:761
+msgid ""
+"Dear %user,\n"
+"\t\t\t\t\n"
+"Your payment has been processed at %site_name:\n"
+"\n"
+"Extras added to post: %post_title\n"
+"Post ID: %post_id\n"
+"Extras added: %extras\n"
+"Payment Total: %total\n"
+"Transaction ID: %trans_id,\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:784
+#, php-format
+msgid "Payment made at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:794
+msgid ""
+"Your payment has been processed but we were unable to update your "
+"information. Please contact the site administrator."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:917
+msgid ""
+"Dear %user,\n"
+"\t\t\n"
+"This is an automated message to let you know that your listing %title has "
+"been renewed at %site_name.\n"
+"\n"
+"Billing Cycle Profile ID: %billing_id\n"
+"\n"
+"If you wish to cancel your billing agreement, please cancel your "
+"subscription on the Paypal website and you will no longer be billed.\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:935
+#: ../includes/spots/functions/ajax-checkout.php:962
+#, php-format
+msgid "Submission renewed at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:945
+msgid ""
+"Dear Admin,\n"
+"\t\t\n"
+"This is an automated message to let you know that the listing %title has "
+"been renewed at %site_name.\n"
+"\n"
+"Billing Cycle Profile ID: %billing_id\n"
+"\n"
+"Please visit your paypal account portal and ensure the payment has been "
+"processed by paypal.\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:983
+#, php-format
+msgid ""
+"Dear %user,\n"
+"\t\t\n"
+"This is an automated message to let you know that we could not process your "
+"billing agreement at %site_name.\n"
+"\n"
+"Please visit your paypal account and ensure your billing agreement is "
+"cancelled.\n"
+"\n"
+"Billing Cycle Profile ID: %billing_id\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1001
+#: ../includes/spots/functions/ajax-checkout.php:1030
+#: ../includes/spots/functions/ajax-checkout.php:1372
+#: ../includes/spots/functions/ajax-checkout.php:1401
+#, php-format
+msgid "Billing failed at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1011
+#, php-format
+msgid ""
+"Dear Admin,\n"
+"\t\t\n"
+"This is an automated message to let you know that a billing cycle has been "
+"cancelled at %sitename.\n"
+"\n"
+"This usually happend because the billing agreement has either been "
+"cancelled, suspended or it is pending on paypal.\n"
+"\n"
+"We will attempy to cancel it but please visit your paypal page and ensure it "
+"has been cancelled.\n"
+"\n"
+"Billing Cycle Profile ID: %billing_id\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1047
+#: ../includes/spots/functions/ajax-checkout.php:1101
+#: ../includes/spots/functions/ajax-checkout.php:1418
+#: ../includes/spots/functions/ajax-checkout.php:1472
+#, php-format
+msgid "Billing Cycle changed. Please re-submit your listing at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1070
+msgid ""
+"Dear %user,\n"
+"\t\t\n"
+"This is an automated email to let you know that we were unable to process "
+"your subscription at %site_name for your submission \"%title\" due to the "
+"fact that your billing cycle days has changed.\n"
+"\n"
+"Please login at %site_name and submit your listing again to generate a new "
+"billing cycle. Your listings has been saved as a Draft.\n"
+"\n"
+"We will attempt to cancel your billing agreement on paypal but please ensure "
+"that it has been effectively cancelled on your paypal page.\n"
+"\n"
+"Profile ID: %billing_id\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1090
+#: ../includes/spots/functions/ajax-checkout.php:1461
+#, php-format
+msgid "Billing Cycle cancelled at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1125
+msgid ""
+"Dear %user,\n"
+"\t\t\n"
+"This is an automated email to let you know that we have failed to process "
+"your subscription at %site_name for your listing %title.\n"
+"\n"
+"We will attempt to cancel your billing agreement on paypal but please ensure "
+"that it has been effectively cancelled on your paypal page.\n"
+"\n"
+"Profile ID: %billing_id\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1143
+#: ../includes/spots/functions/ajax-checkout.php:1170
+#: ../includes/spots/functions/ajax-checkout.php:1514
+#: ../includes/spots/functions/ajax-checkout.php:1541
+#, php-format
+msgid "Submission failed at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1152
+#, php-format
+msgid ""
+"Dear admin,\n"
+"\t\t\n"
+"This is an automated message to let you know that %site_name has failed to "
+"process a billing cycle.\n"
+"\n"
+"Profile ID: %billing_id\n"
+"Error: %error\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1288
+msgid ""
+"Dear %user,\n"
+"\t\t\n"
+"This is an automated message to let you know that your featured selection at "
+"%title has been renewed at %site_name.\n"
+"\n"
+"Billing Cycle Profile ID: %billing_id\n"
+"\n"
+"If you wish to cancel your billing agreement, please cancel your "
+"subscription on the Paypal website and you will no longer be billed.\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1306
+#: ../includes/spots/functions/ajax-checkout.php:1333
+#, php-format
+msgid "Featured Selection renewed at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1316
+msgid ""
+"Dear Admin,\n"
+"\t\t\n"
+"This is an automated message to let you know that a featured selection on "
+"%title has been renewed at %site_name.\n"
+"\n"
+"Billing Cycle Profile ID: %billing_id\n"
+"\n"
+"Please visit your paypal account portal and ensure the payment has been "
+"processed by paypal.\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1354
+msgid ""
+"Dear %user,\n"
+"\t\t\n"
+"This is an automated message to let you know that we could not process your "
+"billing agreement at %site_name for your featured selection on the listing "
+"%title.\n"
+"\n"
+"Please visit your paypal account and ensure your billing agreement is "
+"cancelled.\n"
+"\n"
+"Billing Cycle Profile ID: %billing_id\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1382
+msgid ""
+"Dear Admin,\n"
+"\t\t\n"
+"This is an automated message to let you know that a billing cycle for "
+"featured selection has been cancelled at %sitename for the listing %title.\n"
+"\n"
+"This usually happend because the billing agreement has either been "
+"cancelled, suspended or it is pending on paypal.\n"
+"\n"
+"We will attempy to cancel it but please visit your paypal page and ensure it "
+"has been cancelled.\n"
+"\n"
+"Billing Cycle Profile ID: %billing_id\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1441
+msgid ""
+"Dear %user,\n"
+"\t\t\n"
+"This is an automated email to let you know that we were unable to process "
+"your billing agreement for a featured selection at %site_name for your "
+"submission \"%title\" due to the fact that your billing cycle days has "
+"changed.\n"
+"\n"
+"Please login at %site_name and submit your listing again to generate a new "
+"billing cycle. Your listings has been saved as a Draft.\n"
+"\n"
+"We will attempt to cancel your billing agreement on paypal but please ensure "
+"that it has been effectively cancelled on your paypal page.\n"
+"\n"
+"Profile ID: %billing_id\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1496
+msgid ""
+"Dear %user,\n"
+"\t\t\n"
+"This is an automated email to let you know that we have failed to process "
+"your billing agreement for a featured selection at %site_name for your "
+"listing %title.\n"
+"\n"
+"We will attempt to cancel your billing agreement on paypal but please ensure "
+"that it has been effectively cancelled on your paypal page.\n"
+"\n"
+"Profile ID: %billing_id\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax-checkout.php:1523
+#, php-format
+msgid ""
+"Dear admin,\n"
+"\t\t\n"
+"This is an automated message to let you know that %site_name has failed to "
+"process a billing agreement for a featured selection.\n"
+"\n"
+"Profile ID: %billing_id\n"
+"Error: %error\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:57
+msgid "Success! Logging you in now..."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:61
+#: ../includes/spots/functions/ajax.php:68
+msgid "Incorrect username and password combination."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:171
+#: ../includes/spots/functions/ajax.php:533
+#, php-format
+msgid ""
+"Dear Admin,\n"
+"\n"
+"A new user has signed up to your website.\n"
+"\n"
+"Username: %username\n"
+"Email Address: %email"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:185
+#: ../includes/spots/functions/ajax.php:547
+#, php-format
+msgid "New user registration at %site_name."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:258
+msgid ""
+"A password reset request has been submitted at %site_name for your account:\n"
+"\t\t\t\t\n"
+"Username: %username\n"
+"\n"
+"If this was a mistake, just ignore this email.\n"
+"\n"
+"To reset your password visit the following address:\n"
+"\n"
+"%reset_link\n"
+"\n"
+"This link is only valid for 48 hours."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:276
+#, php-format
+msgid "%site_name - Password Reset"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:283
+msgid ""
+"Unfortunately an error occurred sending you the email. Please visit %link"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:289
+msgid "Check your email inbox to reset your password."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:293
+msgid ""
+"We were not able to process your request. Please contact the site "
+"administrator."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:299
+msgid "Username or email address not found."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:359
+msgid ""
+"Your new password has been successfully changed. Please login using your new "
+"password. Redirecting you shortly..."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:361
+msgid "Your passwords did not match."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:363
+#: ../includes/spots/functions/ajax.php:365
+msgid ""
+"Your new password must be at least 6 characters long and container at least "
+"one letter and one number."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:402
+#: ../includes/spots/functions/ajax.php:445
+msgid "Please type in a valid email address."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:403
+#: ../includes/spots/functions/ajax.php:446
+msgid "Please choose an username."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:501
+msgid ""
+"Welcome to %site_name,\n"
+"\n"
+"Here are your credentials ready for use:\n"
+"Username: %username\n"
+"Password: %password\n"
+"\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:516
+#, php-format
+msgid "Your %site_name credentials"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:523
+msgid ""
+"Unfortunately an error occurred sending you the email. Your credentials are "
+"%username and %password"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:556
+msgid "All Done! Check your email inbox for your password."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:561
+msgid ""
+"There was an error creating your user. Please contact the site "
+"administrator. (Error Code 23)."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:563
+msgid "Email address already in use."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:565
+msgid "Username already in use."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:624
+msgid "Invalid Email"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:627
+msgid "Email already in use"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:652
+msgid "Could not save data. Please contact administrator"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:691
+msgid "Password cannot be empty"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:696
+msgid "Passwords do not match"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:713
+msgid "Current password is incorrect"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:945
+msgid "You can not upload images bigger than 5mb"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:1195
+#: ../includes/spots/functions/functions.php:139
+msgid "Draft"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:1454
+#: ../includes/spots/functions/ajax.php:1876
+msgid "Sorry, Your value must be between %min and %max."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:1456
+#: ../includes/spots/functions/ajax.php:1878
+msgid "Your input must be a whole number."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:1475
+#: ../includes/spots/functions/ajax.php:1493
+#: ../includes/spots/functions/ajax.php:1897
+#: ../includes/spots/functions/ajax.php:1915
+msgid "Your input must be a number."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:1577
+msgid ""
+"There are still items in your cart. Please make the payment or remove items "
+"from your cart before submitting."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:1967
+msgid ""
+"Dear Admin,\n"
+"\t\t\t\t\t\t\n"
+"A submission has been submitted for review at %site_name. Please review it "
+"at %review_link.\n"
+"\n"
+"Kind Regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:1981
+msgid ""
+"Dear Admin,\n"
+"\t\t\t\t\t\t\n"
+"A submission has been submitted at %site_name. Here is the submission "
+"%the_link.\n"
+"\n"
+"Kind Regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2021
+msgid ""
+"Dear Admin,\n"
+"\t\t\n"
+"The submission %post_name has been edited at %site_name,\n"
+"\n"
+"Please review the edit at %post_link."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2033
+#, php-format
+msgid "Submission edited at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2080
+msgid "Submission successfully deleted."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2082
+msgid "You can not delete submissions that are not your own."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2084
+msgid "The submission you are trying to delete does not exist."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2120
+msgid "Publish your submission for %num days."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2121
+msgid "Publish your submission"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2128
+#: ../includes/spots/functions/ajax.php:2188
+msgid "(recurring?)"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2128
+#: ../includes/spots/functions/ajax.php:2188
+msgid "If checked, we will attempt to renew your payment every %num days."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2180
+msgid "Set your submission as featured at %site_name for %num days."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2181
+#, php-format
+msgid "Set your submission as featured at %site_name."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2288
+msgid "Contact form"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2609
+msgid "The email address is invalid."
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2630
+#, php-format
+msgid "%site_name Contact: %spot_name"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2632
+msgid ""
+"Dear %author,\n"
+"\t\t\t\n"
+"%user (email: %email) has sent you a message via %site_name:\n"
+"\n"
+"-----\n"
+"\n"
+"%message"
+msgstr ""
+
+#: ../includes/spots/functions/ajax.php:2651
+#, php-format
+msgid ""
+"There was a problem sending your enquiry. Please email us directly at "
+"%site_email"
+msgstr ""
+
+#: ../includes/spots/functions/class-sf_tooltip.php:68
+msgid "Next"
+msgstr ""
+
+#: ../includes/spots/functions/class-sf_tooltip.php:68
+msgid "Skip Intro"
+msgstr ""
+
+#: ../includes/spots/functions/class-sf_tooltip.php:68
+msgid "Previous"
+msgstr ""
+
+#: ../includes/spots/functions/functions.php:131
+msgid "Published"
+msgstr ""
+
+#: ../includes/spots/functions/functions.php:135
+msgid "Awaiting Approval"
+msgstr ""
+
+#: ../includes/spots/functions/functions.php:151
+msgid "Submitter"
+msgstr ""
+
+#: ../includes/spots/functions/functions.php:184
+msgid ""
+"Dear %user,\n"
+"\t\t\t\t\n"
+"This is to inform you that your submission %title at %site_name has been "
+"approved and it is now published.\n"
+"\n"
+"You can view it here at %link\n"
+"\n"
+"Kind regards,\n"
+"the %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/functions.php:200
+#, php-format
+msgid "Submission approved at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/functions.php:399
+msgid ""
+"Dear %user,\n"
+"\t\t\t\t\n"
+"This message is to inform that you submission %title at %site_name has "
+"expired.\n"
+"\t\t\n"
+"Your submission has been put back to draft and you can login at any time and "
+"resubmit it. All your additionals have been saved.\n"
+"\t\t\n"
+"Please visit %site_link and resubmit it!\n"
+"\t\t\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/functions.php:417
+#, php-format
+msgid "Submission expired at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/functions.php:460
+msgid ""
+"Dear %user,\n"
+"\t\t\t\t\n"
+"This is an automated message to inform you that the featured selection for "
+"your listing %title, has expired.\n"
+"\n"
+"If you wish to feature your listing again, please log in at our website and "
+"re-enable it.\n"
+"\t\t\n"
+"Kind regards,\n"
+"The %site_name team."
+msgstr ""
+
+#: ../includes/spots/functions/functions.php:476
+#, php-format
+msgid "Featured selection expired at %site_name"
+msgstr ""
+
+#: ../includes/spots/functions/post_type.php:17
+#: ../includes/spots/functions/post_type.php:18
+msgid "Add New "
+msgstr ""
+
+#: ../includes/spots/functions/post_type.php:19
+msgid "Edit "
+msgstr ""
+
+#: ../includes/spots/functions/post_type.php:20
+msgid "New "
+msgstr ""
+
+#: ../includes/spots/functions/post_type.php:21
+msgid "All "
+msgstr ""
+
+#: ../includes/spots/functions/post_type.php:22
+msgid "View "
+msgstr ""
+
+#: ../includes/spots/functions/post_type.php:23
+msgid "Search "
+msgstr ""
+
+#: ../includes/spots/functions/post_type.php:24
+#: ../includes/spots/functions/post_type.php:25
+msgid "No "
+msgstr ""
+
+#: ../includes/spots/functions/taxonomy.php:14
+msgid "Tag"
+msgstr ""
+
+#: ../includes/spots/functions/meta/cart.php:70
+msgid "Featured Selection in cart"
+msgstr ""
+
+#: ../includes/spots/functions/meta/cart.php:75
+msgid "Featured Selection payment"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:48
+msgid "Front-End"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:52
+msgid "Dropdowns"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:54
+msgid "Min Values"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:56
+msgid "Max Values"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:58
+msgid "Range Fields"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:60
+msgid "Checkboxes"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:64
+msgid "Custom Submission Fields"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:207
+msgid "You can only upload PNG, JPG or GIF images."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:235
+#: ../includes/spots/functions/meta/metaboxes.php:565
+msgid "Upload New Image"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:451
+#: ../includes/spots/functions/meta/metaboxes.php:649
+msgid "Never"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:487
+msgid "When this is to expire"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:494
+msgid "Slogan:"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:496
+msgid "Spot Slogan."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:501
+msgid "Custom Pin:"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:503
+#: ../includes/spots/functions/meta/metaboxes.php:632
+msgid "Upload your custom pin."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:510
+msgid "Gallery:"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:514
+msgid "Add from media gallery"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:555
+msgid "No images found in your media gallery."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:630
+msgid "Contact Form:"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:637
+msgid "Featured:"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:639
+msgid "Feature this spot. Featured spots show at the top of listings."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:684
+msgid "Featured Selection Expires:"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:687
+msgid "When will the featured selection expire"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:701
+msgid "Address"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:703
+msgid ""
+"Spot Address. Enter your address and get latitude and longitude "
+"automatically. You can drag a drop the pin to adjust actual latitude and "
+"longitude."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:708
+msgid "Latitude:"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:710
+msgid "Pin Latitude."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:715
+msgid "Longitude:"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:717
+msgid "Pin Longitude."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:720
+msgid "Type in your address to set pin. Pin is draggable."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:779
+msgid "You don't have any dropdown fields."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:823
+#: ../includes/spots/functions/meta/metaboxes.php:985
+msgid "You don't have any values in this field."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:823
+#: ../includes/spots/functions/meta/metaboxes.php:985
+msgid "Add more here &rarr;"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1046
+msgid "You don't have any minimum value fields."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1123
+msgid "You don't have any maximum value fields."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1200
+msgid "You don't have any range fields."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1305
+msgid "You don't have any check fields."
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1364
+msgid "Add Custom Fields"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1376
+#: ../includes/spots/functions/meta/metaboxes.php:1444
+#: ../includes/submission_fields/functions/meta/metaboxes.php:272
+msgid "Value"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1442
+msgid "Label of your Custom Field"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1446
+msgid "Your value. This is displayed in the fron end. HTML accepted"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1594
+#: ../includes/spots/functions/meta/metaboxes.php:1624
+#: ../includes/submission_fields/markup-file-submission.php:48
+msgid "Upload File"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1626
+msgid "Add to File List"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1687
+#: ../includes/spots/functions/meta/metaboxes.php:1725
+msgid "File"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1698
+#: ../includes/spots/functions/meta/metaboxes.php:1736
+msgid "Title of the file"
+msgstr ""
+
+#: ../includes/spots/functions/meta/metaboxes.php:1702
+#: ../includes/spots/functions/meta/metaboxes.php:1740
+msgid "File Description"
+msgstr ""
+
+#: ../includes/spots/functions/meta/user.php:6
+msgid "Telephone Number"
+msgstr ""
+
+#: ../includes/spots/functions/meta/user.php:10
+msgid "Please enter your contact number."
+msgstr ""
+
+#: ../includes/spots/functions/meta/user.php:15
+msgid "Position or Company Name"
+msgstr ""
+
+#: ../includes/spots/functions/meta/user.php:19
+msgid "Please enter your staff position or company name (ie Property Manager)."
+msgstr ""
+
+#: ../includes/spots/functions/meta/user.php:27
+#: ../includes/spots/functions/meta/user.php:31
+msgid "Profile Picture - Attachment ID"
+msgstr ""
+
+#: ../includes/spots/functions/meta/user.php:39
+msgid "Public Profile"
+msgstr ""
+
+#: ../includes/spots/functions/meta/user.php:43
+msgid "Whether the user has chosen to make his profile public"
+msgstr ""
+
+#: ../includes/submission_fields/markup-file-submission.php:111
+#: ../includes/submission_fields/markup-file-submission.php:173
+msgid "File Title"
+msgstr ""
+
+#: ../includes/submission_fields/single-file-submission.php:47
+msgid "No files to display."
+msgstr ""
+
+#: ../includes/submission_fields/functions/ajax.php:53
+msgid "You can not upload files bigger than 5mb"
+msgstr ""
+
+#: ../includes/submission_fields/functions/ajax.php:67
+msgid "You cannot upload this file type."
+msgstr ""
+
+#: ../includes/submission_fields/functions/post_type.php:15
+msgid "Submission Fields"
+msgstr ""
+
+#: ../includes/submission_fields/functions/post_type.php:16
+msgid "Submission Field"
+msgstr ""
+
+#: ../includes/submission_fields/functions/post_type.php:18
+msgid "Add New Submission Field"
+msgstr ""
+
+#: ../includes/submission_fields/functions/post_type.php:19
+msgid "Edit Submission Field"
+msgstr ""
+
+#: ../includes/submission_fields/functions/post_type.php:20
+msgid "New Submission Field"
+msgstr ""
+
+#: ../includes/submission_fields/functions/post_type.php:21
+msgid "All Submission Fields"
+msgstr ""
+
+#: ../includes/submission_fields/functions/post_type.php:22
+msgid "View Submission Field"
+msgstr ""
+
+#: ../includes/submission_fields/functions/post_type.php:23
+msgid "Search Submission Fields"
+msgstr ""
+
+#: ../includes/submission_fields/functions/post_type.php:24
+msgid "No Submission Fields Found"
+msgstr ""
+
+#: ../includes/submission_fields/functions/post_type.php:25
+msgid "No Submission Fields found in trash."
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:34
+msgid "Field Attributes"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:36
+msgid "Front-End Options"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:108
+msgid "Select Field"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:109
+msgid "File Upload Field"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:112
+msgid "Select your submission field type"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:122
+msgid ""
+"Whether or not the user is required to fill in this field when making his "
+"submission."
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:155
+msgid "Submission Page Position"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:240
+msgid ""
+"Please select where your field will display in the submission page. Note "
+"that these positions are predefined and the position you click, the field "
+"will display AFTER that default field, unless otherwise stated."
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:249
+msgid "Allow HTML"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:251
+msgid "Whether or not to allow HTML"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:365
+msgid "Number of Files"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:367
+msgid ""
+"How many files the user is able to upload. Leave 0, blank or 1 to allow only "
+"a single file"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:384
+msgid "Single Listing Page Position"
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:468
+msgid ""
+"Please select where your field will display in the single listings page. "
+"Note that these positions are predefined and the position you click, the "
+"field will display AFTER that default field, unless otherwise stated."
+msgstr ""
+
+#: ../includes/submission_fields/functions/meta/metaboxes.php:477
+msgid ""
+"This is the markup that is displayed in your front end. You can use the "
+"variable %% to display the chosen value.<br>For example to display a website "
+"you can type \"Website: %%\" where %% will be replaced with the chosen value "
+"if provided.<br>\n"
+"\t\t\t\tYou can also use %_*VAL_% to multiply an element based on the value. "
+"For example if your field is a number, use \"%_*VAL_% ELEMENT\" to multiple "
+"the string ELEMENT by the amount of times the user has chosen."
+msgstr ""
+
+#: ../includes/widgets/columns/functions.php:18
+msgid "Column"
+msgstr ""
+
+#: ../includes/widgets/columns/functions.php:19
+msgid ""
+"Lets you create a column within a widget area. Always remember to close a "
+"column by using the close column widget."
+msgstr ""
+
+#: ../includes/widgets/columns/functions.php:118
+msgid "Close a column you have already opened on your sidebar."
+msgstr ""
+
+#: ../includes/widgets/columns/functions.php:184
+msgid "Clear Columns"
+msgstr ""
+
+#: ../includes/widgets/columns/functions.php:185
+msgid "Clear the float a set of columns"
+msgstr ""
+
+#: ../includes/widgets/location/location.php:18
+msgid "Listing Location"
+msgstr ""
+
+#: ../includes/widgets/location/location.php:19
+msgid ""
+"Shows listing location on a map. Displayed on a single listing page only"
+msgstr ""
+
+#: ../includes/widgets/news/functions.php:18
+msgid "Latest News"
+msgstr ""
+
+#: ../includes/widgets/news/functions.php:19
+msgid "Displays latest news"
+msgstr ""
+
+#: ../includes/widgets/popular-spots/functions.php:18
+msgid "Popular Spots"
+msgstr ""
+
+#: ../includes/widgets/popular-spots/functions.php:19
+msgid "Displays popular spots (by page view)"
+msgstr ""
+
+#: ../includes/widgets/recently-viewed/functions.php:18
+msgid "Recently Viewed Spots"
+msgstr ""
+
+#: ../includes/widgets/recently-viewed/functions.php:19
+msgid "Shows recently viewed spots by the user"
+msgstr ""
+
+#: ../includes/widgets/related-spots/functions.php:18
+msgid "Related Spots"
+msgstr ""
+
+#: ../includes/widgets/related-spots/functions.php:19
+msgid "Displays related spots on single spot page"
+msgstr ""
+
+#: ../includes/widgets/signup/functions.php:18
+msgid "Sign-up/Login Form"
+msgstr ""
+
+#: ../includes/widgets/signup/functions.php:19
+msgid "Shows a sign-up/login form"
+msgstr ""
+
+#: ../includes/widgets/signup/functions.php:63
+msgid "Log In"
+msgstr ""
+
+#: ../includes/widgets/signup/functions.php:154
+msgid "Password"
+msgstr ""
+
+#: ../includes/widgets/text/functions.php:18
+msgid "Custom - Text"
+msgstr ""
+
+#: ../includes/widgets/text/functions.php:19
+msgid "Simple text widget that accepts shortcodes."
+msgstr ""
+
+#: ../includes/widgets/text/functions.php:75
+msgid "Text:"
+msgstr ""
+
+#: ../includes/widgets/tweets/functions.php:20
+msgid "Custom - Tweets"
+msgstr ""
+
+#: ../includes/widgets/tweets/functions.php:21
+msgid "Displays your latest tweets"
+msgstr ""
+
+#: ../includes/widgets/tweets/functions.php:177
+msgid "Twitter Username"
+msgstr ""
+
+#: ../includes/widgets/tweets/functions.php:184
+msgid "Number of tweets:"
+msgstr ""
+
+#: ../includes/widgets/tweets/functions.php:191
+msgid "Style:"
+msgstr ""
