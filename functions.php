@@ -1,11 +1,9 @@
 <?php
 
-	define('DAHERO_CHANGE_2', true); // includes/spots/loop.php
-
-if (defined('DAHERO_CHANGE_2')) {
+// DAHERO #1667453 STRT
 		wp_register_style('uknumberplate-webfont',  get_template_directory_uri().'/css/uk_number_plate.css');
 		wp_enqueue_style('uknumberplate-webfont');
-}
+// DAHERO #1667453 STOP
 
 		////////////////////////////////////////////
 		//// BTOA Framework - Not for external use

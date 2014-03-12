@@ -67,10 +67,10 @@
 		
         <h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 
-<?php if (defined('DAHERO_CHANGE_2')) : ?>
+<!-- DAHERO #1667453 STRT -->
 <?php $tag = @reset(get_the_terms($post->ID, 'spot_tags')); ?>
 <?php if (is_object($tag)) : ?><p class="number-plate"><?=strtoupper($tag->name);?></p><?php endif; ?>
-<?php endif; ?>
+<!-- DAHERO #1667453 STOP -->
 
         <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="read-more grid-only"><?php _e('View more', 'btoa'); ?></a>
         
