@@ -129,21 +129,88 @@
 					
 					////// TITLE
 					$markup .= '<h2><a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_title().'</a></h2>';
-					
+
+// DAHERO #1667457 STRT
+					$tag = @reset(get_the_terms(get_the_ID(), 'spot_tags'));
+
+					if (is_object($tag)) {
+						$markup .= '<p class="number-plate">'.strtoupper($tag->name).'</p>';
+					}
+
+					//// GETS ALL CATEGORIES FROM THIS POST BEFORE WE GO ANY FURTHER
+					$categories = get_the_terms(get_the_ID(), 'spot_cats');
+					$spot_cats = array();
+					if (is_array($categories)) { foreach($categories as $_cat) { $spot_cats[] = $_cat->term_id; } }
+
+					///// LETS GET OUR SEARCH FIELDS THAT WE CAN INCLUDE
+					$args = array(
+						'post_type' => 'search_field',
+						'posts_per_page' => -1,
+						'meta_query' => array(
+							array(
+								'key' => 'include_overlay',
+								'value' => 'on',
+							),
+							array(
+								'key' => 'overlay_markup',
+								'value' => '',
+								'compare' => '!=',
+							),
+						)
+					);
+					$mQ = get_posts($args);
+					if (is_array($mQ)) {
+						$markup .= '<ul class="spot-search-fields clear">';
+						foreach ($mQ as $mP) {
+							$field_cats = get_post_meta($mP->ID, 'public_field_category', true);
+							//// CHECKS IF THIS SEARCH FIELD IS WITHIN ONE OF THE CHOSEN CATEGORIES
+							$is_field_in_cat = false;
+							if (!is_array($field_cats) || in_array('all', $field_cats) || $field_cats == '') {
+								$is_field_in_cat = true;
+							} else {
+								///// GOES THROUGH CATEGORY BY CATEGORY
+								foreach($field_cats as $field_cat) {
+									if(in_array($field_cat, $spot_cats)) {
+										$is_field_in_cat = true;
+									}
+								}
+							}
+
+							$sfTransform = array(
+								'range' => array('apply_field_overlay_markup', '', true),
+								'check' => array('apply_field_overlay_markup', 'on', false),
+								'min_val' => array('apply_field_overlay_markup', '', true),
+								'max_val' => array('apply_field_overlay_markup', '', false),
+								'dropdown' => array('apply_field_overlay_markup_dropdown', '', false),
+								'dependent' => array('apply_field_overlay_markup_dependent', '', false),
+							);
+							if ($is_field_in_cat) {
+								$field = get_post_meta(get_the_ID(), '_sf_field_'.$mP->ID, true);
+								if (is_array($op = $sfTransform[get_post_meta($mP->ID, 'field_type', true)])) {
+									if ($op[1] == '' && $field != '' || $field == $op[1]) {
+										if ($op[2] == true) $field = get_translated_wpml_value(get_the_ID(), $field);
+										$fn = $op[0];
+										$field = $fn($mP->ID, $field);
+										$markup .= '<li id="sf_search_field_'.get_the_ID().'">'.$field.'</li>';
+									}
+								}
+							}
+						}
+						$markup .= '</ul>';
+					}
+
+// DAHERO #1667457 STOP
+
 					///// IF WE ARE SHOWING THE EXCERPT
 					if($excerpt == 'true') {
-						
-						$markup .= get_excerpt_by_id(get_the_ID(), $excerpt_length);
-						
+						$markup .= '<div class="clear">'.get_excerpt_by_id(get_the_ID(), $excerpt_length).'</div>';
 					}
 					
 					//// IF WE ARE SHOWING EXTRAS
 					
 					//// IF SHOWING TITLE
 					if($link == true) {
-						
 						$markup .= '<p><a href="'.get_permalink().'" title="'.get_the_title().'" class="button-primary">'.$link_title.'</a></p>';
-						
 					}
 				
 				//// closes markup
