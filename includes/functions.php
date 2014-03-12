@@ -1,5 +1,35 @@
 <?php
 
+// DAHERO #1667466 STRT
+
+	add_action('save_post', '_ph_save_post', 10, 1);
+	
+	function _ph_save_post($post_id) {
+		if (!$post = get_post($post_id)) { return $post_id; }
+		//// MAKES SURE IT'S A SPOT
+		if ($post->post_type == 'spot') {
+			if (!has_post_thumbnail($post_id)) {
+				$args = array(
+					'post_type' => 'attachment',
+					'post_mime_type' =>'image',
+					'post_status' => 'inherit',
+					'posts_per_page' => -1,
+					'post_parent' => $post_id,
+					'orderby' => 'menu_order',
+					'order' => 'ASC',
+				);
+				$galQ = get_posts($args);
+				
+				if (is_array($galQ) && is_object($galP = reset($galQ))) {
+					add_post_meta($post_id, '_thumbnail_id', $galP->ID, true);
+				}
+			}
+		}
+		return $post_id;
+	}
+
+// DAHERO #1667466 STOP
+
 	add_theme_support('post-thumbnails');
 	add_theme_support('automatic-feed-links');
 	
