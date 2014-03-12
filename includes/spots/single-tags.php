@@ -4,8 +4,7 @@
 	
 	if (is_array($tags)) { ?>
 <!-- DAHERO #1667450 STRT -->
-		<p class="spot-tags"><strong><?php _e('Plate:', 'btoa'); ?> </strong><?=$tags[0]->name;?></p>
+		<p class="spot-tags"><strong><?php _e('Plate:', 'btoa'); ?> </strong><?=reset($tags)->name;?></p>
 <!-- DAHERO #1667450 STOP -->
-<?php } ?>
 	<?php }
 ?>
