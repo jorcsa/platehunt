@@ -268,14 +268,16 @@
 		
 		<?php endif; ?>
 
-<?php if (defined('DAHERO_CHANGE_7') && ddp('map_featured_overlay') == 'on' && ddp('map_clustering') != 'on') : ?>
+// DAHERO #1667454 STRT
+<?php if (ddp('map_featured_overlay') == 'on' && ddp('map_clustering') != 'on') : ?>
 				showFeatured = true;
 
 				google.maps.event.addListener(theMap, 'idle', function() {
 					jQuery('#slider-map')._sf_refresh_featured_markers();
 				});
 <?php endif; ?>
-		
+// DAHERO #1667454 STOP
+
 		<?php if(ddp('map_zoom_controls') == 'on') :  ?>jQuery('#map-zoom-in').mapZoomIn(); jQuery('#map-zoom-out').mapZoomOut();<?php endif; ?>
 		
 	});

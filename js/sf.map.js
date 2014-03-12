@@ -1477,8 +1477,8 @@
 				});
 			}
 
+// DAHERO #1667454 STRT
 			if (typeof showFeatured == 'undefined' || showFeatured == true) {
-debugger;
 				//// LETS GO THHROUGH ALL OUR FEATURED MARKERS
 				jQuery('.overlay-featured-wrapper').each(function() {
 					//// SEE IF THE ID IS NOT IN THERE
@@ -1488,6 +1488,7 @@ debugger;
 					else { jQuery(this).hide(); }
 				});
 			}
+// DAHERO #1667454 STOP
 		},
 		
 		_sf_map_resize: function() {

@@ -1,7 +1,6 @@
 <?php
 
 	define('DAHERO_CHANGE_1', true); // includes/spots/single-tags.php
-	define('DAHERO_CHANGE_7', true); // includes/slider/markup-map.php
 	define('DAHERO_CHANGE_2', true); // includes/spots/loop.php
 
 if (defined('DAHERO_CHANGE_2')) {
