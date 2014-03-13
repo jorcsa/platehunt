@@ -167,36 +167,22 @@
 										if(ddp('pbl_images_check') == 'on') :  ?>
                                 
                                 <div class="_sf_box" id="_sf_gallery">
-                                
                                 	<div class="head">
-                                    
                                     	<div class="left"><?php _e('Images', 'btoa'); ?></div>
                                         <!-- /.left/ -->
-                                            
 											<?php
-													
 													/// IF IT'S ENABLED IN THE CART
 													if(ddp('price_images') != '' && ddp('price_images') != '0' && get_post_meta($spot_id, 'price_images', true) != 'on') :
-													
 												 ?>
-												 
 												 <div class="right _sf_us_addtocart" id="price_images">
-											
 													<?php $is_in_cart = get_post_meta($spot_id, 'price_images_cart', true); ?>
-											
 													<span<?php if($is_in_cart == 'on') : ?> style="display: none;"<?php endif; ?> onclick="jQuery(this)._sf_us_add_to_cart('price_images', <?php echo $spot_id ?>);">
-													
 													<?php echo sprintf2(__('Upload up to %num images for just %price', 'btoa'), array('num' => ddp('price_images_num'),'price' => format_price(ddp('price_images')))); ?>
-											
 													</span>
-													
 													<em style="display: <?php if($is_in_cart == 'on') : ?>inline<?php else : ?>none<?php endif; ?>;"><?php _e('Please checkout before updating this.', 'btoa'); ?></em>
-											
 												&nbsp;</div>
-											
 											<?php endif; /// ENDS IF IT'S ENABLED IN THE CART ?>
                                         <!-- /.right/ -->
-                                        
                                         <div class="clear"></div>
                                         <!-- /.cclear/ -->
                                     
@@ -204,24 +190,16 @@
                                     <!-- /.head/ -->
                                     
                                     <div class="inside">
-                                    
                                     	<div class="left"><em><?php echo sprintf2(__('Upload up to %num image(s).', 'btoa'), array('num' => ddp('pbl_images'))); ?></em></div>
                                         <!-- /.left/ -->
-                                        
                                         <div class="right">
-                                        
-                                        <span class="button-secondary" id="_sf_gallery_upload_button" style="cursor: pointer; position: relative;">
-											
+											<span class="button-secondary" id="_sf_gallery_upload_button" style="cursor: pointer; position: relative;">
 												<?php _e('Upload Images', 'btoa'); ?>
-                                           <input type="file" value="Upload Image" class="button-secondary" name="_sf_gallery_upload[]" id="_sf_gallery_upload" multiple style="display: block; opacity: 0; position: absolute; left: 0; top: 0; width: 100%; height: 100%; cursor: pointer !important;" />
-                                    
-                                    		<?php $steps->add_step('_sf_gallery_upload', __('Upload new images', 'btoa'), __('Click the upload images button to start uploading your images. You can upload multiple images at the same time. By uploading more than one image you automatically create an image gallery within your submission page. Maximum size per image is 5mb.', 'btoa'), '_sf_gallery'); //// ADDS THE TITLE TO ORU STEP ?>    
-                                           
-                                       </span>
-                                        
-                                        </div>
+											   <input type="file" value="Upload Image" class="button-secondary" name="_sf_gallery_upload[]" id="_sf_gallery_upload" multiple style="display: block; opacity: 0; position: absolute; left: 0; top: 0; width: 100%; height: 100%; cursor: pointer !important;" />
+												<?php $steps->add_step('_sf_gallery_upload', __('Upload new images', 'btoa'), __('Click the upload images button to start uploading your images. You can upload multiple images at the same time. By uploading more than one image you automatically create an image gallery within your submission page. Maximum size per image is 5mb.', 'btoa'), '_sf_gallery'); //// ADDS THE TITLE TO ORU STEP ?>    
+											</span>
+                                    	</div>
                                         <!-- /.right/ -->
-                                        
                                         <div class="clear"></div><span class="upload-bar-file" style="display: none;"></span><div class="upload-bar" style="display: none;"><span></span></div>
                                         
                                         <div class="clear"></div>
@@ -243,10 +221,11 @@
 										
 										</script>
                                         
-                                        <ul id="_sf_gallery_images">
-                                        
-                                        
-                                        </ul>
+<!-- DAHERO #1667540 STRT -->
+	                                    <small class="error tooltip left" style="top: 54px;"><?php _e('Upload an image.', 'btoa'); ?></small>
+                                        <ul id="_sf_gallery_images" class="required-file"></ul>
+<!-- DAHERO #1667540 STOP -->
+
                                         <!-- /#_sf_gallery_images/ -->
                                     		<?php $steps->add_step('_sf_gallery_images', __('Image Gallery', 'btoa'), __('After uploading your images you can click and drag your uploaded images to re-arrange them. Your first image will be used as a placeholder throughout the website and the following images are automatically added to your gallery image.', 'btoa')); //// ADDS THE TITLE TO ORU STEP ?> 
                                         
@@ -552,17 +531,14 @@
 										});
 									
 									</script>
-                                    
+
                                     <div class="inside">
-                                    
                                     	<em><?php echo sprintf2(__('Add up to %num tags.', 'btoa'), array('num' => ddp('pbl_tags_no'))); ?></em>
-                                        
                                         <input type="hidden" value="" name="_sf_tags" id="_sf_tags_input" />
-                                        
-                                        <ul id="_sf_tags_list">
-										
-                                        
-                                        </ul>
+<!-- DAHERO #1667540 STRT -->
+	                                    <small class="error tooltip right" style="top: 74px;"><?php _e('Enter plate number.', 'btoa'); ?></small>
+                                        <ul id="_sf_tags_list" class="required-file"></ul>
+<!-- DAHERO #1667540 STOP -->
                                         <!-- /#_sf_tags_list/ -->
                                         
                                         <p style="margin-bottom: 0;">

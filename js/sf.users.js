@@ -1733,15 +1733,18 @@
 				
 				//// CHECKS FOR REQUIRED FILES
 				jQuery('.required-file').each(function() {
-					
 					//// ONLY IF IT'S VISIBLE
-					if(jQuery(this).closest('._sf_box').is(':visible')) {
-					
+					if (jQuery(this).closest('._sf_box').is(':visible')) {
 						//// IF NOTHING IS SET
-						if(jQuery(this).children('li:not(._sf_box_clone)').length == 0) { error = true; var the_ID = jQuery(this).attr('id'); error_fields.push('#'+the_ID); jQuery(this).siblings('.error').slideDown(200, function() { jQuery(this).css({ overflow: 'visible' }) }); }
-						
+						if (jQuery(this).children('li:not(._sf_box_clone)').length == 0) {
+							error = true;
+							var the_ID = jQuery(this).attr('id');
+							error_fields.push('#'+the_ID);
+							jQuery(this).siblings('.error').slideDown(200, function() {
+								jQuery(this).css({ overflow: 'visible' });
+							});
+						}
 					}
-					
 				});
 				
 				//// IF THERE ARE ERRORS LET'S DISPLAY THEM
@@ -1752,14 +1755,17 @@
 					//// DISPLAY ERROR MESSAGE
 					jQuery('#message').removeClass('success').addClass('error').find('span').text(sf_us.submit_error_message);
 					jQuery('#message i').attr('class', 'icon-cancel-circle');
-					jQuery('#message').slideDown(200, function() { jQuery(this).delay(3000).slideUp(200); });
-					jQuery("html, body").animate({ scrollTop: 0 }, 500);
+// DAHERO #1667540 STRT
+// DELAY PROLONGED
+					var messageAppearanceTime = 10000;
+					jQuery('#message').slideDown(200, function() { jQuery(this).delay(messageAppearanceTime).slideUp(200); });
 					
 					//// GOES THROUGH OUR ERROR FIELDS
 					jQuery.each(error_fields, function(i, _error) {
 						
 						//// DISPLAYS THE MESSAGE OF THIS FIELD
-						jQuery(_error).siblings('small').fadeIn(200, function() { jQuery(this).delay(3000).fadeOut(200); });
+						jQuery(_error).siblings('small').fadeIn(200, function() { jQuery(this).delay(messageAppearanceTime).fadeOut(200); });
+// DAHERO #1667540 STOP
 						
 						//// ADDS ERROR CLASS
 						jQuery(_error).addClass('error');

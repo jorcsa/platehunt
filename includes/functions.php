@@ -203,7 +203,10 @@
 //		wp_register_script( 'btoaMap', get_template_directory_uri().'/js/sf.map.min.js');
 		wp_register_script( 'btoaMap', get_template_directory_uri().'/js/sf.map.js');
 // DAHERO #1667454 STOP
-		wp_register_script( 'btoaUser', get_template_directory_uri().'/js/sf.users.min.js');
+// DAHERO #1667540 STRT
+//		wp_register_script( 'btoaUser', get_template_directory_uri().'/js/sf.users.min.js');
+		wp_register_script( 'btoaUser', get_template_directory_uri().'/js/sf.users.js');
+// DAHERO #1667540 STOP
 		wp_register_script( 'clusterer', get_template_directory_uri().'/js/markerclusterer.min.js');
 		wp_register_script( 'jquery-validate', get_template_directory_uri().'/js/jquery.validate.min.js');
 		wp_register_script( 'cScrollbar', get_template_directory_uri().'/js/jquery.mCustomScrollbar.min.js');

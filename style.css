@@ -750,7 +750,9 @@ h5.sticky-featured { margin: 0 0 5px; }
 h5.sticky-featured span { padding: 3px 6px; color: white; font-weight: bold; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;
 -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
 
-._sf_box { display: block; margin: 0 0 20px; }
+/* DAHERO #1667540 STRT */
+._sf_box { display: block; margin: 0 0 20px; position: relative; }
+/* DAHERO #1667540 STOP */
 ._sf_box .head { border: 1px solid #d0d0d0; background: #f2f2f2; padding: 8px 15px; text-transform: uppercase; font-weight: bold;
 -webkit-border-top-left-radius: 2px;-webkit-border-top-right-radius: 2px;-moz-border-radius-topleft: 2px;-moz-border-radius-topright: 2px;border-top-left-radius: 2px;border-top-right-radius: 2px; }
 ._sf_box .inside { background: white; border: 1px solid #d0d0d0; border-top: 0; padding: 15px; position: relative;
