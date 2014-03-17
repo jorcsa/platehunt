@@ -610,16 +610,13 @@
                                         <script type="text/javascript">
 										
 											jQuery(document).ready(function() {
-												
+
 												//// WHEN GETTING PINPOINT
 												
 												//// INITIATES MAP
 												jQuery('#_sf_location_map').gmap3({
-				
 													map: {
-														
 														options: {
-															
 															zoom: 2,
 															mapTypeId: google.maps.MapTypeId.ROADMAP,
 															mapTypeControl: true,
@@ -635,7 +632,54 @@
 													}
 													
 												});
-												
+
+<!-- DAHERO #1667542 STRT -->
+<?php if (ddp('map_geolocation') == 'on') : /* IF USER HAS ENABLED GEOLOCATION */ ?>
+
+												if (navigator.geolocation) {
+													navigator.geolocation.getCurrentPosition(function(position) {
+														initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+														var theLat = jQuery('#_sf_latitude');
+														var theLng = jQuery('#_sf_longitude');
+
+														theLat.val(initialLocation.lat());
+														theLng.val(initialLocation.lng());
+									
+														//// SAVES IT IN COOKIES
+														jQuery.cookie('user_latitude', initialLocation.lat(), { path: '/' });
+														jQuery.cookie('user_longitude', initialLocation.lng(), { path: '/' });
+									
+														//// ADDS THE MARKER AND LOCATES MAP
+														jQuery('#_sf_location_map').gmap3({
+															map: {
+																options: {
+																	zoom: 14,
+																	center: initialLocation
+																}
+															},
+															marker: {
+																values: [{ latLng:[initialLocation.lat(), initialLocation.lng()] }],
+																options: {
+																	draggable: true
+																},
+																events: {
+																	mouseup: function(marker, event, context) {
+																		//// GETS MARKER LATITUDE AND LONGITUDE
+																		var thePos = marker.getPosition();
+																		var lat = thePos.lat();
+																		var lng = thePos.lng();
+																		theLat.val(lat);
+																		theLng.val(lng);
+																	}
+																}
+															}
+														});
+													});
+												}
+		
+<?php endif; ?>
+<!-- DAHERO #1667542 STOP -->
 											});
 										
 										</script>
