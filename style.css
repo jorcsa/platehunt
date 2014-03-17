@@ -1098,13 +1098,16 @@ t-webkit-transition: all .11s ease-in-out; -moz-transition: all .11s ease-in-out
 	.spot-tags { font-size: 11px; line-height: 13px; text-transform: uppercase; }
 
 /* DAHERO #1667457 STRT */
-
 .spots-short ul.spot-search-fields li {
 	margin: 0!important;
 }
-
 .spots-short ul.spot-search-fields {
 	margin: 10px 0;
 }
-
 /* DAHERO #1667457 STOP */
+
+/* DAHERO #1667512 STRT */
+.wpb-bm-list .select-replace {
+	display: none;
+}
+/* DAHERO #1667512 STOP */
