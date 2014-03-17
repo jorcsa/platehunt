@@ -19,11 +19,13 @@
 
 	<style type="text/css">
     
-        #header, #finish-filter, #map-resize { <?php echo ddp_bg_color('header_bg_color'); ?> border-top-color: <?php echo ddp('header_border_color'); ?>; }
+/* DAHERO #1667517 STRT */
+        #header, #clear-filter, #finish-filter, #map-resize { <?php echo ddp_bg_color('header_bg_color'); ?> border-top-color: <?php echo ddp('header_border_color'); ?>; }
 		#menu ul ul { <?php echo ddp_bg_color('header_bg_color'); ?> }
 		#header-mobile, #mobile-menu-wrapper, #filter-menu { <?php echo ddp_bg_color('header_border_color'); ?> <?php echo ddp_color('menu_link_color'); ?> }
-		#mobile-menu-button, #mobile-filter-button, #mobile-menu-close, #filter-menu-close, #mobile-menu-wrapper > ul > li, #finish-filter { border-color: <?php echo ddp_rgb(ddp('header_bg_color'), .5); ?>; }
-		#mobile-menu a, #finish-filter { <?php echo ddp_color('menu_link_color'); ?> }
+		#mobile-menu-button, #mobile-filter-button, #mobile-menu-close, #filter-menu-close, #mobile-menu-wrapper > ul > li, #clear-filter, #finish-filter { border-color: <?php echo ddp_rgb(ddp('header_bg_color'), .5); ?>; }
+		#mobile-menu a, #clear-filter, #finish-filter { <?php echo ddp_color('menu_link_color'); ?> }
+/* DAHERO #1667517 STOP */
 		
 		#menu ul li a { line-height: <?php echo $header_height; ?>px; <?php echo ddp_color('menu_link_color'); ?> border-color: <?php echo ddp('header_border_color'); ?>; }
 		#menu ul li a:hover, #map-resize { <?php echo ddp_color('menu_link_color_hover'); ?> border-color: <?php echo ddp('menu_link_color_border_hover'); ?> }

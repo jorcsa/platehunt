@@ -1,7 +1,10 @@
 <form id="search-spots" action="<?php echo home_url(); ?>" method="post">
 
+<!-- DAHERO #1667517 STRT -->
+			<span id="clear-filter" class="responsive-only"><i class="icon-eraser"></i> <?php _e('Clear Search', 'btoa'); ?></span>
+<!-- DAHERO #1667517 STOP -->
 			<span id="finish-filter" class="responsive-only"><i class="icon-ok"></i> <?php _e('Finish Filtering', 'btoa'); ?></span>
-				
+
 			<?php //// THIS ARE FIELDS FORDISTANCE VALUES ?>
 			<input type="hidden" id="_sf_enable_radius_search" value="false" name="_sf_enable_radius_search" />
 			<input type="hidden" id="_sf_radius_lat_from" value="" name="_sf_radius_lat_from" />
@@ -827,7 +830,6 @@
 										values: [<?php echo $abs_min; ?>, <?php echo $abs_max; ?>],
 										<?php if(get_post_meta($field->id, 'range_increments', true) != '' && is_numeric(get_post_meta($field->id, 'range_increments', true))) : ?>step: <?php echo get_post_meta($field->id, 'range_increments', true) ?>,<?php endif; ?>
 										slide: function(event, ui) {
-											
 											var value1 = ui.values[0];
 											var value2 = ui.values[1];
 											console.log(<?php echo $field->id ?>);

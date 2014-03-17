@@ -36,7 +36,7 @@
 			//// ALSO ADDS OTHER CLASSES TO OUR REPLACE CONTAINER
 			var allClass = selCont.attr('class');
 			mainCont.addClass(allClass);
-			
+
 			//// WHEN WE CHANGE SELECT
 			selCont.change(function() {
 				
@@ -866,6 +866,7 @@
 			var mainCont = jQuery('#search-hover, #custom-header #search-spots');
 			var searchCont = jQuery('#search, #custom-header #search-spots');
 			var closeBtn = jQuery('#finish-filter');
+			var clearBtn = jQuery('#clear-filter');
 			var ipadBtn = jQuery('#search-ipad');
 			
 			///// IF OUR MAIN CONTAINER DOES NOT EXIST HIDE IT
@@ -909,27 +910,52 @@
 				
 			});
 			
-			
 			//// WHEN THE USER CLICKS TO CLOSE THE BUTTON
 			closeBtn.swipe({
-				
 				tap: function() {
-				
 					mainCont.stop().animate({ avoidTransforms: false, left: '-100%', opacity: 0 }, 200, function() {
-						
 						jQuery(this).css({ opacity: 1 }).hide();
-						
 					});
-					
 					if(jQuery(window).width() > 700) { ipadBtn.fadeIn(200); }
-					
-					
 					jQuery('#custom-header').css({ 'z-index': 0 });
-				
 				}
-				
 			});
-			
+
+/* DAHERO #1667517 STRT */
+			//// WHEN THE USER CLICKS TO CLEAR BUTTON
+			clearBtn.swipe({
+				tap: function() {
+					clearBtn.closest('form').find('.ui-slider').each(function() {
+						var s = jQuery(this);
+						var values = [
+							s.slider("option", "min"),
+							s.slider("option", "max")
+						];
+						s.slider("option", "values", values);
+						s.slider('option','slide').call(s, null, {values: values});
+					});
+					clearBtn.closest('form').find(':input').each(function() {
+						switch(this.type) {
+							case 'password':
+							case 'text':
+							case 'textarea':
+								jQuery(this).val('');
+								break;
+							case 'select-multiple':
+							case 'select-one':
+								jQuery(this).find(':selected').attr('selected', null);
+								jQuery(this).find('option:first').attr('selected', 'selected');
+								jQuery(this).trigger('change');
+								break;
+							case 'checkbox':
+							case 'radio':
+								this.checked = false;
+						}
+					});
+					jQuery('#search-spots').submit();
+				}
+			});
+/* DAHERO #1667517 STOP */
 		},
 		
 		_sf_login_widget_tabs: function() {

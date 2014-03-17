@@ -169,7 +169,10 @@
 		wp_register_style('main',  get_stylesheet_uri(), array(), '20130402', 'all');
 		
 		//// RESPONSIVE
-		wp_register_style('responsive',  get_template_directory_uri().'/css/responsive.min.css', array(), '20130402', 'all');
+// DAHERO #1667517 STRT
+//		wp_register_style('responsive',  get_template_directory_uri().'/css/responsive.min.css', array(), '20130402', 'all');
+		wp_register_style('responsive',  get_template_directory_uri().'/css/responsive.css', array(), '20130402', 'all');
+// DAHERO #1667517 STOP
 		
 		//// RETINA.CSS
 		wp_register_style('_sf_retina', get_template_directory_uri().'/css/retina.css', array(), '20130402', 'all');
@@ -198,7 +201,10 @@
 		wp_register_script( 'zepto', get_template_directory_uri().'/js/zepto.min.js');
 		wp_register_script( 'foundation', get_template_directory_uri().'/js/foundation.min.js');
 		wp_register_script( 'foundation_placeholder', get_template_directory_uri().'/js/foundation.placeholder.min.js');
-		wp_register_script( 'bScripts', get_template_directory_uri().'/js/sf.scripts.min.js');
+// DAHERO #1667517 STRT
+//		wp_register_script( 'bScripts', get_template_directory_uri().'/js/sf.scripts.min.js');
+		wp_register_script( 'bScripts', get_template_directory_uri().'/js/sf.scripts.js');
+// DAHERO #1667517 STOP
 // DAHERO #1667454 STRT
 //		wp_register_script( 'btoaMap', get_template_directory_uri().'/js/sf.map.min.js');
 		wp_register_script( 'btoaMap', get_template_directory_uri().'/js/sf.map.js');
