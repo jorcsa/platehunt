@@ -272,8 +272,8 @@
 							
 							
                             <span class="type-text-wrapper">
-// DAHERO #1667459 STRT
 <?php
+// DAHERO #1667459 STRT
 
 switch ($this_field->post_name) {
 	case 'location':
@@ -284,8 +284,8 @@ switch ($this_field->post_name) {
 		break;
 }
 
-?>
 // DAHERO #1667459 STOP
+?>
 							   	<input type="text"
 									value="<?=$sel_val;?>"
 									id="_sf_field_<?php echo $field->id; ?>"
