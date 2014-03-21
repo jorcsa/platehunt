@@ -234,7 +234,7 @@
 									
 									<input type="hidden" name="_sf_field_<?php echo $this_field->ID ?>_lat" value="<?php if(isset($_GET['glat'])) { echo $_GET['glat']; } ?>" class="_sf_field_places_lat" id="_sf_field_<?php echo $this_field->ID ?>_lat" />
 									<input type="hidden" name="_sf_field_<?php echo $this_field->ID ?>_lng" value="<?php if(isset($_GET['glng'])) { echo $_GET['glng']; } ?>" class="_sf_field_places_lng" id="_sf_field_<?php echo $this_field->ID ?>_lng" />
-									
+					
 								<?php
 								
 									if(isset($_GET['gplace'])) {
@@ -272,9 +272,22 @@
 							
 							
                             <span class="type-text-wrapper">
-							
+// DAHERO #1667459 STRT
+<?php
+
+switch ($this_field->post_name) {
+	case 'location':
+		if (isset($_GET['glng'])) $sel_val = $_GET['gplace'];
+		break;
+	case 'keywords':
+		if (isset($_GET['keywords'])) $sel_val = $_GET['keywords'];
+		break;
+}
+
+?>
+// DAHERO #1667459 STOP
 							   	<input type="text"
-									value="<?php echo $sel_val; ?>"
+									value="<?=$sel_val;?>"
 									id="_sf_field_<?php echo $field->id; ?>"
 									class="<?php echo $field_class; ?>"
 									name="<?php echo $this_field->post_name ?>"
