@@ -257,12 +257,11 @@
 					
 					//// MAKES SURE WE HAVE GEOMETRY
 					if(place.geometry) {
-						
 						//// IF WE HAVE A VIEWPORT LETS FIT TO BOUNDS
 						if(place.geometry.viewport) {
-						
+// DAHERO #1667521 STRT
 							/// CENTER THE MAP THERE AND FIT IT TO BOUNDS
-							map.fitBounds(place.geometry.viewport);
+							if (map.length != 0) map.fitBounds(place.geometry.viewport);
 					
 							///// NOW WE NEED TO SET OUR TWO LAT AND LNG POINTS SO WE CAN FILTER RESULTS BASED ON THIS SELECTION
 							var latRange = place.geometry.viewport.getSouthWest().lat()+'|'+place.geometry.viewport.getNorthEast().lat();
@@ -272,8 +271,8 @@
 							
 							jQuery('#search-spots').submit();
 						
-						} else {
-							
+						} else if (map.length != 0) {
+// DAHERO #1667521 STOP							
 							//// LET JUST CENTER IT
 							map.panTo(place.geometry.location);
 							map.setZoom(16);
