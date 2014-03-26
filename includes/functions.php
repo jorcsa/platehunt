@@ -221,20 +221,8 @@
 		
 		//// GMAP
 		wp_register_script('gmap', get_template_directory_uri().'/js/gmap3.min.js', array('jquery'));
-		
-		///// IF WE HAVE AN API WE NEED TO INCLDUE IN OUR JAVASCRIPT
-		if(ddp('google_places_api')) {
-			
-			if(ddp('google_places_api') != '') {
-				
-				$google_api = urldecode('http://maps.googleapis.com/maps/api/js?sensor=false&key='.ddp('google_places_api').'&libraries=places');
-				
-				wp_register_script('google_maps_api', $google_api);
-				
-			}
-			
-		} else { wp_register_script('google_maps_api', 'http://maps.googleapis.com/maps/api/js?sensor=false'); }
-		
+
+// DAHERO #1667462 REMOVED GOOGLE SCRIPT LOADING FROM HERE TO sf.map.js
 	}
 	
 	//// ENQUEUES OUR SCRIPTS

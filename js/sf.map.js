@@ -1,4 +1,21 @@
-(function($){ 
+// DAHERO #1667462 STRT
+function _ph_google_sync() {
+	jQuery(document).ready(function($) {
+		$(document).trigger('_ph_google_sync');
+	});
+}
+// DAHERO #1667462 STOP
+
+jQuery(document).ready(function($) {
+	var script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=_ph_google_sync';
+	// IF WE HAVE AN API WE NEED TO INCLDUE IN OUR JAVASCRIPT
+	if (sf.google_api) script.src += '&key=' + sf.google_api + '&libraries=places';
+	document.body.appendChild(script);
+});
+
+(function($){
 
     $.fn.extend({
 		

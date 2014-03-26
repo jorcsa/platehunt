@@ -609,7 +609,8 @@
                                         
                                         <script type="text/javascript">
 										
-											jQuery(document).ready(function() {
+											// DAHERO #1667462 EVENT BOUND
+											jQuery(document).bind('_ph_google_sync', function() {
 
 												//// WHEN GETTING PINPOINT
 												
@@ -626,11 +627,8 @@
 															navigationControl: true,
 															scrollwheel: true,
 															streetViewControl: false
-															
 														}
-														
 													}
-													
 												});
 
 <!-- DAHERO #1667542 STRT -->

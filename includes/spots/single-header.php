@@ -17,7 +17,8 @@
 ?>
 <script type="text/javascript">
 
-	jQuery(document).ready( function() {
+	// DAHERO #1667462 EVENT BOUND
+	jQuery(document).bind('_ph_google_sync', function() {
 	
 		//// INITIATES OUR MAP
 		var theMap = jQuery('#the-map');

@@ -311,19 +311,17 @@ switch ($this_field->post_name) {
                             
 								<script type="text/javascript">
 								
-									jQuery(document).ready(function() {
-										
+// DAHERO #1667462 STRT
 										<?php if(get_post_meta($this_field->ID, 'text_type', true) == 'tags') : ?>
-										
+									jQuery(document).ready(function() {
 											jQuery('#_sf_field_<?php echo $field->id; ?>').btoaLoadTagSuggestions('<?php echo get_post_meta($this_field->ID, 'text_default', true); ?>');
-										
-										<?php else : ?>
-										
-											jQuery('#_sf_field_<?php echo $field->id; ?>').btoaLoadGooglePlacesSuggestions('<?php echo get_post_meta($this_field->ID, 'text_default', true); ?>', '<?php echo get_post_meta($this_field->ID, 'google_places_country', true); ?>');
-											
-										<?php endif; ?>
-										
 									});
+										<?php else : ?>
+									jQuery(document).bind('_ph_google_sync', function() {
+											jQuery('#_sf_field_<?php echo $field->id; ?>').btoaLoadGooglePlacesSuggestions('<?php echo get_post_meta($this_field->ID, 'text_default', true); ?>', '<?php echo get_post_meta($this_field->ID, 'google_places_country', true); ?>');
+									});
+										<?php endif; ?>
+// DAHERO #1667462 STOP
 								
 								</script>
                             
