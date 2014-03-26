@@ -1663,7 +1663,7 @@
 					
 				}
 				
-/* DAHERO #1667515 LAT LON CHECK IS ENOUGH
+/* DAHERO #1667542 LAT LON CHECK IS ENOUGH
 				//// LOCATION - ADDRESS
 				var addressCont = formCont.find('#_sf_address');
 				if(addressCont.val() == '') { error = true; error_fields.push('#_sf_address'); }
