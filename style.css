@@ -1105,9 +1105,3 @@ t-webkit-transition: all .11s ease-in-out; -moz-transition: all .11s ease-in-out
 	margin: 10px 0;
 }
 /* DAHERO #1667457 STOP */
-
-/* DAHERO #1667512 STRT */
-.wpb-bm-list .select-replace {
-	display: none;
-}
-/* DAHERO #1667512 STOP */
