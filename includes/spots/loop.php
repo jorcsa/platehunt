@@ -64,13 +64,13 @@
 		
 			<div class="clear"></div>
 			<!-- .clear -->
-		
-        <h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 
-<!-- DAHERO #1667453 STRT -->
+<!-- DAHERO #1667453 STRT (#1667453 MOVED BEFORE H2) -->
 <?php $tag = @reset(get_the_terms($post->ID, 'spot_tags')); ?>
 <?php if (is_object($tag)) : ?><p class="number-plate"><?=strtoupper($tag->name);?></p><?php endif; ?>
 <!-- DAHERO #1667453 STOP -->
+		
+        <h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 
         <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="read-more grid-only"><?php _e('View more', 'btoa'); ?></a>
         
