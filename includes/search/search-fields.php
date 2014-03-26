@@ -1058,10 +1058,12 @@ switch ($this_field->post_name) {
             <!-- /#search-spots/ -->
             
             <script type="text/javascript">
-			
+
+	// DAHERO #1667462 EVENT BOUND
+	jQuery(document).bind('_ph_google_sync', function() {
 				/// WHENEVER THIS FUNCTION IS SUBMITTED,
 				/// THE MAP IS RELOADED
 				jQuery('#search-spots').btoaSubmitSearch();
-			
+	});			
 			</script>
 			
