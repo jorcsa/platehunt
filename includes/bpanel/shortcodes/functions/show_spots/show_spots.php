@@ -161,6 +161,11 @@
 					$mQ = get_posts($args);
 					if (is_array($mQ)) {
 						$markup .= '<ul class="spot-search-fields clear">';
+// DAHERO #1667515 STRT
+						$markup .= '<li><strong>Country:</strong> '.get_post_meta($mP->ID, 'address_country', true).'</li>';
+						$markup .= '<li><strong>City:</strong> '.get_post_meta($mP->ID, 'address_city', true).'</li>';
+// DAHERO #1667515 STOP
+
 						foreach ($mQ as $mP) {
 							$field_cats = get_post_meta($mP->ID, 'public_field_category', true);
 							//// CHECKS IF THIS SEARCH FIELD IS WITHIN ONE OF THE CHOSEN CATEGORIES

@@ -362,6 +362,11 @@
 					
 					//// STARTS OUR MARKUP
 					$return['markup'] .= '<ul class="fields_overlay">';
+
+// DAHERO #1667515 STRT
+						$return['markup'] .= '<li><strong>Country:</strong> '.get_post_meta($post_id, 'address_country', true).'</li>';
+						$return['markup'] .= '<li><strong>City:</strong> '.get_post_meta($post_id, 'address_city', true).'</li>';
+// DAHERO #1667515 STOP
 					
 						//// NOW LETS GET ALL THE CATEGORIES IN THIS POST AND MAKE SURE WE ONLY DISPLAY THE NECESARY FIELDS
 						//// WE ALSO CREATE AN ARRAY WITH ALL THE CATEGORIES
