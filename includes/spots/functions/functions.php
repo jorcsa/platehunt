@@ -583,10 +583,70 @@ The %site_name team.", 'btoa'), array(
 		}
 		
 		if(!isset($post_ids)) {
-		
+
 			///// CHECKS FOR SEARCH FIELDS BUT PNLY IF WE DONT HAVE ALREADY A LIST OF POST IDS
 			$fields = $_GET;
-			if(!is_array($fields)) { $fields = array(); }
+			if (!is_array($fields)) { $fields = array(); }
+
+// DAHERO #1667462 STRT
+			if ($fields['glat'] != '' &&
+				$fields['glng'] != '' &&
+				($lat_range = explode('|', $fields['glat'])) &&
+				($lng_range = explode('|', $fields['glng'])) &&
+				count($lat_range) * count($lng_range) == 4 &&
+				abs($lat_range[0]) <= 90 && abs($lat_range[1]) <= 90 &&
+				abs($lng_range[1]) <= 180 && abs($lng_range[1]) <= 180 // &&
+//				$fields['_sf_enable_radius_search'] != 'true'
+			) {
+				if ($lat_range[0] > $lat_range[1]) $lat_range = array_reverse($lat_range);
+				if ($lng_range[0] > $lng_range[1]) $lng_range = array_reverse($lng_range);
+/*
+				///// LETS CHECK FOR SENSITIVITY
+				if (get_post_meta($field->ID, 'google_places_sensitivity', true) != '') {
+					$sensitivity = get_post_meta($field->ID, 'google_places_sensitivity', true);
+					//// IF ITS A NUMBER
+					if(is_numeric($sensitivity) || is_float($sensitivity)) {
+						//// IF WE ARE USING MILES LET'S PUT THAT TO KILOMETREST
+						if(ddp('geo_distance_type') == 'Miles') { $sensitivity = $sensitivity/0.62137; }
+						//// LET'S TRANSFORM THIS SENSITIVITY IN LATITUDE
+						$lat_sensitivity = $sensitivity / 110.54;
+						$lng_sensitivity = $sensitivity / (111.320*cos($lng_range[0]));
+						///// LETS CHANGE OUR VARIABLES
+						$lat_range[0] = $lat_range[0] - $lat_sensitivity;
+						$lat_range[1] = $lat_range[1] + $lat_sensitivity;
+						$lng_range[0] = $lng_range[0] - $lng_sensitivity;
+						$lng_range[1] = $lng_range[1] + $lng_sensitivity;
+					}
+				}
+*/
+				//// LETS DO OUR QUERY
+				$args['meta_query'][] = array(
+					'key' => 'latitude',
+					'value' => $lat_range[0],
+					'compare' => '>=',
+					'type' => 'DECIMAL',
+				);
+				$args['meta_query'][] = array(
+					'key' => 'latitude',
+					'value' => $lat_range[1],
+					'compare' => '<=',
+					'type' => 'DECIMAL',
+				);
+				//// LETS DO OUR QUERY
+				$args['meta_query'][] = array(
+					'key' => 'longitude',
+					'value' => $lng_range[0],
+					'compare' => '>=',
+					'type' => 'DECIMAL',
+				);
+				$args['meta_query'][] = array(
+					'key' => 'longitude',
+					'value' => $lng_range[1],
+					'compare' => '<=',
+					'type' => 'DECIMAL',
+				);
+			}
+// DAHERO #1667462 STOP
 			
 			//// GOES THROUGH EACH GET AND SEE IF IT"S A FIELD
 			foreach($fields as $field => $value) {
@@ -595,215 +655,129 @@ The %site_name team.", 'btoa'), array(
 				if($this_field = get_posts(array('name' => $field, 'post_type' => 'search_field', 'post_status' => 'publish', 'numberposts' => '1'))) {
 					
 					$this_field = array_pop($this_field);
-					
 					///// FIELD TYPE
 					$field_type = get_post_meta($this_field->ID, 'field_type', true);
 					
-					
-					
-					
 					///// IF IT'S A DROPDOWN
 					if($field_type == 'dropdown') {
-						
 						//// IF WE ARE USING CATEGORIES
 						if(get_post_meta($this_field->ID, 'dropdown_type', true) == 'categories') { 
-									
 							/// FIRST LETS MAKE SURE THE TAXONOMY EXISTS
 							if($this_tax = get_term_by('slug', $value, 'spot_cats')) {
-								
 								//// ADDS TO OUR QUERY
 								$args['tax_query'][] = array(
-								
 									'taxonomy' => 'spot_cats',
 									'field' => 'slug',
 									'terms' => $value,
-								
 								);
-								
 							}
-						
 						} else {
-						
 							//// MAKES SURE THE VALUE EXISTS
 							if(_sf_dropdown_value_exists($this_field->ID, $value)) {
-								
 								///// ADDS IT TO OUR QUERY
 								$args['meta_query'][] = array(
-								
 									'key' => '_sf_field_'.$this_field->ID,
 									'value' => $value,
 									'compare' => 'LIKE',
-								
 								);
-								
 							}
-						
 						}
-						
 					} //// ENDS IF DROPDOWN
-					
-					
-					
 					
 					///// IF IT'S A DEPENDENT
 					if($field_type == 'dependent') {
-						
 						$parent_id = get_post_meta($this_field->ID, 'dependent_parent', true);
-						
 						//// IF THE DEPENDENTS PARENT IS A CATEGORY
 						if(get_post_meta($parent_id, 'dropdown_type', true) == 'categories') {
-									
 							/// FIRST LETS MAKE SURE THE TAXONOMY EXISTS
 							if($this_tax = get_term_by('slug', $value, 'spot_cats')) {
-								
 								//// ADDS TO OUR QUERY
 								$args['tax_query'][] = array(
-								
 									'taxonomy' => 'spot_cats',
 									'field' => 'slug',
 									'terms' => $value,
-								
 								);
-								
 							}
-							
 						} else {
-						
 							//// MAKES SURE THE VALUE EXISTS
 							if(_sf_dependent_value_exists($this_field->ID, $value)) {
-								
 								///// ADDS IT TO OUR QUERY
 								$args['meta_query'][] = array(
-								
 									'key' => '_sf_field_'.$this_field->ID,
 									'value' => $value,
 									'compare' => 'LIKE',
-								
 								);
-								
 							}
-						
 						}
-						
 					} // ENDS IF DEPENDENT
-					
-					
-					
 					
 					///// IF IT'S A RANGE
 					if($field_type == 'range') {
-						
 						//// OUR MAXIMUM VALUE FIRST
 						if(isset($fields[$field.'_max'])) {
-							
 							//// IF MAXIMUM FIELD IS SMALLER THAN OUR MAXIMUM
 							if($fields[$field.'_max'] <= get_post_meta($this_field->ID, 'range_maximum', true)) {
-								
 								//// IF OUR MINIMUM IS GREATER THAN THE MAXIMUM
 								if($fields[$field.'_min'] >= get_post_meta($this_field->ID, 'range_minimum', true)) {
-							
 									///// ADDS IT TO OUR QUERY
 									$args['meta_query'][] = array(
-									
 										'key' => '_sf_field_'.$this_field->ID,
 										'value' => array($fields[$field.'_min'], $fields[$field.'_max']),
 										'compare' => 'BETWEEN',
 										'type' => 'NUMERIC',
-									
 									);
-									
 								}
-								
 							}
-							
 						}
-						
 					} // ENDS IF RANGE
-					
-					
-					
 					
 					///// IF IT'S A MINIMUM VALUE
 					if($field_type == 'min_val' && is_numeric($value)) {
-							
 						///// ADDS IT TO OUR QUERY
 						$args['meta_query'][] = array(
-						
 							'key' => '_sf_field_'.$this_field->ID,
 							'value' => $value,
 							'compare' => '>=',
 							'type' => 'NUMERIC',
-						
 						);
-						
 					} // ENDS IF MINIMUM VALUE
-					
-					
-					
 					
 					///// IF IT'S A MAXIMUM VALUE
 					if($field_type == 'max_val' && is_numeric($value)) {
-							
 						///// ADDS IT TO OUR QUERY
 						$args['meta_query'][] = array(
-						
 							'key' => '_sf_field_'.$this_field->ID,
 							'value' => $value,
 							'compare' => '<=',
 							'type' => 'NUMERIC',
-						
 						);
-						
 					} // ENDS IF MINIMUM VALUE
-					
-					
-					
 					
 					///// IF IT'S A CHECK FIELD
 					if($field_type == 'check' && $value == true) {
-							
 						///// ADDS IT TO OUR QUERY
 						$args['meta_query'][] = array(
-						
 							'key' => '_sf_field_'.$this_field->ID,
 							'value' => 'on',
 							'compare' => '==',
-						
 						);
-						
 					} // ENDS IF CHECKFIELD
-					
-					
-					
 					
 					///// IF IT'S A KEYWORD
 					if($field_type == 'text') {
-						
 						///// IF ITS A VALID TAG
 						if($term = get_term_by('slug', $value, 'spot_tags')) {
-							
 							//// ADDS IT TO OUR QUERY
 							$args['tax_query'][] = array(
-							
 								'terms' => $value,
 								'field' => 'slug',
 								'taxonomy' => 'spot_tags',
-							
 							);
-							
 						}
-						
 					} // ENDS IF KEYWORD
-					
-					
-					
-					
-					
-					
+
 				} /// ENDS IF A SEARCH FIELD
-				
 			} //// ENDS FOREACH
-		
 		} //// ENDS IF WE DONT HAVE A LIST OF POST IDS
 			
 		if(isset($post_ids)) { $args['post__in'] = $post_ids; }
