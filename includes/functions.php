@@ -24,6 +24,36 @@
 					add_post_meta($post_id, '_thumbnail_id', $galP->ID, true);
 				}
 			}
+// DAHERO #1667515 STRT
+			$lat = get_post_meta($post_id, 'latitude', true);
+			$lng = get_post_meta($post_id, 'longitude', true);
+
+			if ($lat != '' && $lng != '')
+			{
+    			$geocodeResponse = wp_remote_get('http://maps.googleapis.com/maps/api/geocode/json?latlng='.$lat.','.$lng.'&sensor=false');
+    			$address = json_decode($geocodeResponse['body']);
+
+    			if (!is_wp_error($geocodeResponse) && !empty($address->results)) {
+                    foreach ($address->results[0]->address_components as $ac) {
+                        if (in_array("locality", $ac->types)) {
+						    update_post_meta($post_id, 'address_city', $ac->long_name);
+                        }
+                        if (in_array("country", $ac->types)) {
+						    update_post_meta($post_id, 'address_country', $ac->long_name);
+                        }
+                    }
+				    update_post_meta($post_id, 'address', $address->results[0]->formatted_address);
+    			} else {
+					update_post_meta($post_id, 'address_city', '');
+					update_post_meta($post_id, 'address_country', '');
+    			}
+			}
+			else
+			{	
+				update_post_meta($post_id, 'address_city', '');
+				update_post_meta($post_id, 'address_country', '');
+			}
+// DAHERO #1667515 STOP
 		}
 		return $post_id;
 	}

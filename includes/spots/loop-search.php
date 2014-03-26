@@ -36,16 +36,16 @@
 	if($sQ->have_posts()) :
 
 ?>
-
 	<ul class="spot-search-fields">
-    
+<!-- DAHERO #1667515 STRT -->
+       	<li><strong>Country:</strong> <?=get_post_meta($post->ID, 'address_country', true);?></li>
+       	<li><strong>City:</strong> <?=get_post_meta($post->ID, 'address_city', true);?></li>
+<!-- DAHERO #1667515 STOP -->
     	<?php
-			
 			//// STARTS OUR LOOP
 			$post_id = $post->ID;
 			$the_post = $post;
 			while($sQ->have_posts()) : $sQ->the_post();
-			
 				//// GETS THE CATEGORIES THIS SEARCH FIELD IS ASSIGNED TO
 				$field_cats = get_post_meta(get_the_ID(), 'public_field_category', true);
 				
@@ -56,11 +56,8 @@
 				
 					///// GOES THROUGH CATEGORY BY CATEGORY
 					foreach($field_cats as $field_cat) {
-						
 						if(in_array($field_cat, $spot_cats)) { $is_field_in_cat = true; }
-						
 					}
-				
 				}
 				
 				//// ONLY SHOWS THIS FIELD IS ITS WITHIN THE CATEGORY

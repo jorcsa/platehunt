@@ -1220,9 +1220,6 @@ Email Address: %email', 'btoa'), array(
 				//// WE NEED TO LOOK FOR ADD TO CART METABOXES THAT ARE ON AND SAVE THEM WITH OUR DRAFT
 				$cart_meta = _sf_check_cart_meta($post_id);
 				
-				//// FINALLY SAVES AS A DRAFT
-				wp_update_post($args);
-				
 				//// UPDATES CART META
 				if(count($cart_meta) > 0) { _sf_update_cart_meta($post_id, $cart_meta); }
 				
@@ -1246,8 +1243,6 @@ Email Address: %email', 'btoa'), array(
 				$slogan = $fields['_sf_slogan'];
 				update_post_meta($post_id, 'slogan', $slogan);
 				
-				
-				
 				//// CATEGORY – FIRST MAKES SURE WE CAN SELECT MULTIPLE OR JUST ONE CATEGORY
 				if(isset($fields['_sf_category'])) {
 						
@@ -1260,10 +1255,7 @@ Email Address: %email', 'btoa'), array(
 					}
 					/// UPDATES CATEGORIES
 					wp_set_post_terms($post_id, $categories, 'spot_cats');
-				
 				}
-				
-				
 				
 				//// TAGS – MAKES SURE USER CAN ONLY ADD THE LIMIT NUMBER OF TAGS
 				if($fields['_sf_tags'] != '') {
@@ -1272,17 +1264,12 @@ Email Address: %email', 'btoa'), array(
 					$max_tags = _sf_get_maximum_tags($post_id); $i = 0;
 					$the_tags = array();
 					foreach($tags as $_tag) {
-						
 						if($i < $max_tags) { $the_tags[] = $_tag; }
 						$i++; 
-						
 					}
-					
 					//// UPDATES TAGS
 					wp_set_post_terms($post_id, $the_tags, 'spot_tags', false);
-					
 				}
-				
 				
 				//// SAVES ADDRESS
 				$address = $fields['_sf_address'];
@@ -1295,6 +1282,9 @@ Email Address: %email', 'btoa'), array(
 				update_post_meta($post_id, 'latitude', $lat);
 				update_post_meta($post_id, 'longitude', $lng);
 				
+// DAHERO #1667515 MOVED SAVING AFTER LATLNG UPDATED
+				//// FINALLY SAVES AS A DRAFT
+				wp_update_post($args);
 				
 				//// SAVES CONTACT FORM
 				if(_sf_check_contact_form($post_id)) {
@@ -1621,9 +1611,6 @@ Email Address: %email', 'btoa'), array(
 					//// WE NEED TO LOOK FOR ADD TO CART METABOXES THAT ARE ON AND SAVE THEM WITH OUR DRAFT
 					$cart_meta = _sf_check_cart_meta($post_id);
 					
-					//// FINALLY SAVES
-					wp_update_post($args);
-					
 					//// UPDATES CART META
 					if(count($cart_meta) > 0) { _sf_update_cart_meta($post_id, $cart_meta); }
 					
@@ -1696,6 +1683,9 @@ Email Address: %email', 'btoa'), array(
 					update_post_meta($post_id, 'latitude', $lat);
 					update_post_meta($post_id, 'longitude', $lng);
 					
+// DAHERO #1667515 MOVED SAVING AFTER LATLNG UPDATED
+					//// FINALLY SAVES
+					wp_update_post($args);
 					
 					//// SAVES CUSTOM PIN
 					if(_sf_check_custom_pin($post_id)) {

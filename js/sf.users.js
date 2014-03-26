@@ -1663,10 +1663,11 @@
 					
 				}
 				
+/* DAHERO #1667515 LAT LON CHECK IS ENOUGH
 				//// LOCATION - ADDRESS
 				var addressCont = formCont.find('#_sf_address');
 				if(addressCont.val() == '') { error = true; error_fields.push('#_sf_address'); }
-				
+*/				
 				//// LOCATION - LATITUDE
 				var latCont = formCont.find('#_sf_latitude');
 				if(latCont.val() == '' || latCont.val() < -90 || latCont.val() > 90 || isNaN(latCont.val())) { error = true; error_fields.push('#_sf_latitude'); }
