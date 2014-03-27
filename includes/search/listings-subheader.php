@@ -197,27 +197,28 @@
 								var the_sort_item_text = jQuery('#_sf_user_select_distance_sort').text();
 								var the_sort_item_url = jQuery('#_sf_user_select_distance_sort').val();
 								
-								if(user_latitude == undefined || user_longitude == undefined) {
+// DAHERO #1757941 STRT
+								//// TRIES TO GET THE USERS POSITION
+								if (navigator.geolocation) {
 									
-									//// TRIES TO GET THE USERS POSITION
-									if(navigator.geolocation) {
+									navigator.geolocation.getCurrentPosition(function(position) {
+					
+										//// SAVES IT IN COOKIES
+										jQuery.cookie('user_latitude', position.coords.latitude, { path: '/' });
+										jQuery.cookie('user_longitude', position.coords.longitude, { path: '/' });
+										geolocation_sort = true;
 										
-										navigator.geolocation.getCurrentPosition(function(position) {
-						
-											//// SAVES IT IN COOKIES
-											jQuery.cookie('user_latitude', position.coords.latitude, { path: '/' });
-											jQuery.cookie('user_longitude', position.coords.longitude, { path: '/' });
-											geolocation_sort = true;
-											
-											//// PUTS IT BACK IN
-											jQuery('select[name="listing-sort"] option:first').after('<option value="'+the_sort_item_url+'">'+the_sort_item_text+'</option>');
-											
-										});
+										//// PUTS IT BACK IN
+										jQuery('select[name="listing-sort"] option:first').after('<option value="'+the_sort_item_url+'">'+the_sort_item_text+'</option>');
 										
-									}
+									});
 									
-								} else { geolocation_sort = true; }
-								
+								} else if (user_latitude != undefined && user_longitude != undefined) {
+										geolocation_sort = true;
+										//// PUTS IT BACK IN
+										jQuery('select[name="listing-sort"] option:first').after('<option value="'+the_sort_item_url+'">'+the_sort_item_text+'</option>');
+								}
+// DAHERO #1757941 STOP
 								//// UPDATES FIELDS
 								if(geolocation_sort) {
 									
