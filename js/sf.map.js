@@ -25,7 +25,6 @@ jQuery(document).ready(function($) {
 			
 			//// PREVENTS NON AJAX SUBMISSIONS
 			formCont.submit(function(e) {
-				
 				//// CANCELS WHATEVER OTHER REQUESTS WE ARE DOING
 				if(typeof spotsSearchAjaxObj != 'undefined') { spotsSearchAjaxObj.abort(); }
 				
@@ -241,6 +240,13 @@ jQuery(document).ready(function($) {
 				return false;
 				
 			});
+
+// DAHERO #1667529 STRT
+			formCont.bind('searchFieldChanged', function() {
+				if (jQuery(window).width() > 1000)
+					jQuery('#search-spots').submit();
+			});
+// DAHERO #1667529 STOP
 			
 		},
 		

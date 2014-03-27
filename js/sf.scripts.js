@@ -269,7 +269,8 @@
 							inputCont.parent().siblings('._sf_field_places_lat').val(latRange);
 							inputCont.parent().siblings('._sf_field_places_lng').val(lngRange);
 							
-							jQuery('#search-spots').submit();
+// DAHERO #1667529 TRIGGER	
+							jQuery('#search-spots').trigger('searchFieldChanged');
 						
 						} else if (map.length != 0) {
 // DAHERO #1667521 STOP							
@@ -308,8 +309,8 @@
 			});
 			
 			inputCont.focusout(function() {
-				
-				jQuery('#search-spots').submit();
+// DAHERO #1667529 TRIGGER	
+				jQuery('#search-spots').trigger('searchFieldChanged');
 				
 			});
 			
@@ -917,6 +918,8 @@
 					});
 					if(jQuery(window).width() > 700) { ipadBtn.fadeIn(200); }
 					jQuery('#custom-header').css({ 'z-index': 0 });
+// DAHERO #1667529 ADDED TO TRIGGER SEARCH
+					jQuery('#search-spots').submit();
 				}
 			});
 

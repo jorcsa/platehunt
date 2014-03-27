@@ -362,7 +362,7 @@ switch ($this_field->post_name) {
 								<input type="hidden" name="_sf_ignore_sel_<?php echo $this_field->ID; ?>" value="false" class="_sf_ignore_sel _sf_ignore_sel_<?php echo $this_field->ID; ?>" />
 								<?php endif; ?>
 							   
-                            <select name="<?php echo $this_field->post_name; ?>"<?php if(in_array($field->id, $hidden_array)) : ?> style="display: none;"<?php endif; ?> class="parent-<?php echo $field->id; ?> sf_if_<?php echo $field->id ?> type-dropdown<?php if(get_post_meta($field->id, 'dropdown_change_location', true) == 'on') { echo ' change-location'; } //// IF IT CHANGES THE MAP ?>" onchange="jQuery('#has_changed_<?php echo $this_field->post_name; ?>').val('true'); <?php if(get_post_meta($field->id, 'dropdown_change_location', true)) : ?>jQuery(this)._sf_check_for_radius(<?php echo $field->id; ?>);<?php endif ?> jQuery('#search-spots').submit(); jQuery('#has_changed_<?php echo $this_field->post_name; ?>').val('false');">
+                            <select name="<?php echo $this_field->post_name; ?>"<?php if(in_array($field->id, $hidden_array)) : ?> style="display: none;"<?php endif; ?> class="parent-<?php echo $field->id; ?> sf_if_<?php echo $field->id ?> type-dropdown<?php if(get_post_meta($field->id, 'dropdown_change_location', true) == 'on') { echo ' change-location'; } //// IF IT CHANGES THE MAP ?>" onchange="jQuery('#has_changed_<?php echo $this_field->post_name; ?>').val('true'); <?php if(get_post_meta($field->id, 'dropdown_change_location', true)) : ?>jQuery(this)._sf_check_for_radius(<?php echo $field->id; ?>);<?php endif ?> jQuery('#search-spots').trigger('searchFieldChanged');/* DAHERO #1667529 TRIGGER	*/ jQuery('#has_changed_<?php echo $this_field->post_name; ?>').val('false');">
                             
                             	<option value=""><?php _e('All', 'btoa'); ?></option>
                             
@@ -487,7 +487,7 @@ switch ($this_field->post_name) {
 										jQuery('select[name="<?php echo $this_field->post_name; ?>"]').btoaReloadDependentField(sel, this_field, function() {
 											
 											//// LETS RELOAD OUR AJAX
-											jQuery('#search-spots').submit();
+											jQuery('#search-spots').trigger('searchFieldChanged');/* DAHERO #1667529 TRIGGER	*/
 											
 										});
 									
@@ -510,7 +510,7 @@ switch ($this_field->post_name) {
 								<input type="hidden" name="_sf_ignore_sel_<?php echo $this_field->ID; ?>" id="_sf_ignore_sel_<?php echo $this_field->ID; ?>" value="false" class="_sf_ignore_sel _sf_ignore_sel_<?php echo $this_field->ID; ?>" />
 								<?php endif; ?>
                             
-                            <select name="<?php echo $this_field->post_name; ?>" class="parent-<?php echo $field->id; ?> sf_if_<?php echo $field->id ?> parent-dropdown-<?php echo $the_parent; ?> type-dropdown<?php if(get_post_meta($field->id, 'dependent_change_location', true) == 'on') { echo ' change-location'; } //// IF IT CHANGES THE MAP ?>" onchange="jQuery('#has_changed_<?php echo $this_field->post_name; ?>').val('true'); <?php if(get_post_meta($field->id, 'dependent_change_location', true)) : ?>jQuery(this)._sf_check_for_radius(<?php echo $field->id; ?>);<?php endif; ?> jQuery('#search-spots').submit(); jQuery('#has_changed_<?php echo $this_field->post_name; ?>').val('false');"<?php if(in_array($field->id, $hidden_array)) : ?> style="display: none;"<?php endif; ?>>
+                            <select name="<?php echo $this_field->post_name; ?>" class="parent-<?php echo $field->id; ?> sf_if_<?php echo $field->id ?> parent-dropdown-<?php echo $the_parent; ?> type-dropdown<?php if(get_post_meta($field->id, 'dependent_change_location', true) == 'on') { echo ' change-location'; } //// IF IT CHANGES THE MAP ?>" onchange="jQuery('#has_changed_<?php echo $this_field->post_name; ?>').val('true'); <?php if(get_post_meta($field->id, 'dependent_change_location', true)) : ?>jQuery(this)._sf_check_for_radius(<?php echo $field->id; ?>);<?php endif; ?> jQuery('#search-spots').trigger('searchFieldChanged');/* DAHERO #1667529 TRIGGER	*/ jQuery('#has_changed_<?php echo $this_field->post_name; ?>').val('false');"<?php if(in_array($field->id, $hidden_array)) : ?> style="display: none;"<?php endif; ?>>
 							
 							<option value=""><?php _e('-', 'btoa'); ?></option>
 							
@@ -649,7 +649,7 @@ switch ($this_field->post_name) {
 							
 							?>
                             
-                            <select name="<?php echo $this_field->post_name; ?>" class="type-min_val sf_if_<?php echo $field->id ?>" onchange="jQuery('#search-spots').submit();"<?php if(in_array($field->id, $hidden_array)) : ?> style="display: none;"<?php endif; ?>>
+                            <select name="<?php echo $this_field->post_name; ?>" class="type-min_val sf_if_<?php echo $field->id ?>" onchange="jQuery('#search-spots').trigger('searchFieldChanged');/* DAHERO #1667529 TRIGGER	*/"<?php if(in_array($field->id, $hidden_array)) : ?> style="display: none;"<?php endif; ?>>
                             
                             	<?php 
 									
@@ -715,7 +715,7 @@ switch ($this_field->post_name) {
 							
 							?>
                             
-                            <select name="<?php echo $this_field->post_name; ?>" class="type-max_val sf_if_<?php echo $field->id ?>" onchange="jQuery('#search-spots').submit();"<?php if(in_array($field->id, $hidden_array)) : ?> style="display: none;"<?php endif; ?>>
+                            <select name="<?php echo $this_field->post_name; ?>" class="type-max_val sf_if_<?php echo $field->id ?>" onchange="jQuery('#search-spots').trigger('searchFieldChanged');/* DAHERO #1667529 TRIGGER	*/"<?php if(in_array($field->id, $hidden_array)) : ?> style="display: none;"<?php endif; ?>>
                             
                             	<?php 
 									
@@ -862,7 +862,7 @@ switch ($this_field->post_name) {
 										},
 										stop: function(event, ui) {
 											
-											jQuery('#search-spots').submit();
+											jQuery('#search-spots').trigger('searchFieldChanged');/* DAHERO #1667529 TRIGGER	*/
 											
 										}
 										
@@ -963,7 +963,7 @@ switch ($this_field->post_name) {
 										},
 										stop: function(event, ui) {
 											
-											jQuery('#search-spots').submit();
+											jQuery('#search-spots').trigger('searchFieldChanged');/* DAHERO #1667529 TRIGGER	*/
 											
 										}
 										
@@ -992,7 +992,7 @@ switch ($this_field->post_name) {
 								else { $sel_val = ''; }
 							
 							?>
-                        <script type="text/javascript">jQuery(document).ready(function() { jQuery('#<?php echo $this_field->post_name ?>_check').parent().click(function() { jQuery('#search-spots').submit(); }); });</script>
+                        <script type="text/javascript">jQuery(document).ready(function() { jQuery('#<?php echo $this_field->post_name ?>_check').parent().click(function() { jQuery('#search-spots').trigger('searchFieldChanged');/* DAHERO #1667529 TRIGGER	*/ }); });</script>
 						
                         <input type="checkbox" name="<?php echo $this_field->post_name ?>" class="type-check id-<?php echo $field->id ?> sf_if_<?php echo $field->id ?>" id="<?php echo $this_field->post_name ?>_check"<?php if($sel_val != '') { echo ' checked="checked"'; } ?><?php if(in_array($field->id, $hidden_array)) : ?> style="display: none;"<?php endif; ?> />
 						
