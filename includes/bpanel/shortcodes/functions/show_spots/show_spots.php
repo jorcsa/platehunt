@@ -162,8 +162,8 @@
 					if (is_array($mQ)) {
 						$markup .= '<ul class="spot-search-fields clear">';
 // DAHERO #1667515 STRT
-						$markup .= '<li><strong>Country:</strong> '.get_post_meta($mP->ID, 'address_country', true).'</li>';
-						$markup .= '<li><strong>City:</strong> '.get_post_meta($mP->ID, 'address_city', true).'</li>';
+						$markup .= '<li><strong>Country:</strong> '.get_post_meta(get_the_ID(), 'address_country', true).'</li>';
+						$markup .= '<li><strong>City:</strong> '.get_post_meta(get_the_ID(), 'address_city', true).'</li>';
 // DAHERO #1667515 STOP
 
 						foreach ($mQ as $mP) {
