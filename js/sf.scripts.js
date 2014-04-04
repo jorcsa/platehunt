@@ -423,7 +423,8 @@
 				if(ulCont.children('li').length > 0) { ulCont.html('').hide(); }
 				
 				//// SUBMIT FORM
-				jQuery('#search-spots').submit();
+// DAHERO #1667529 TRIGGER	
+				jQuery('#search-spots').trigger('searchFieldChanged');
 				
 			});
 				
@@ -954,7 +955,8 @@
 								this.checked = false;
 						}
 					});
-					jQuery('#search-spots').submit();
+// DAHERO #1667529 TRIGGER	
+					jQuery('#search-spots').trigger('searchFieldChanged');
 				}
 			});
 /* DAHERO #1667517 STOP */
