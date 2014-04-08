@@ -215,7 +215,11 @@
 	#reviews ul li .rating-user-info { width: 100%; text-align: center; }
 	
 	.submission-field-text, .submission-field-select, .submission-field-file { text-align: center; }
-	
+
+	/* DAHERO #1816127 FIX */
+	#header #logo {
+		margin: 10px 0 40px 0;
+	}	
 }
 
 
