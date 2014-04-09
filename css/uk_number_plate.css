@@ -12,6 +12,7 @@
 
 }
 
+#spot-gallery .number-plate, /* DAHERO #1816104 ADDED */
 .spot-short .number-plate,
 .spot-item .number-plate {
 	font-family: 'uknumberplateregular';
@@ -31,3 +32,12 @@
 	line-height: 20pt;
 	margin-bottom: 5px;
 }
+
+/* DAHERO #1816104 STRT */
+#spot-gallery .number-plate {
+	font-size: 32pt;
+	padding: 12px;
+	line-height: 30pt;
+	margin-bottom: 10px;
+}
+/* DAHERO #1816104 STOP */

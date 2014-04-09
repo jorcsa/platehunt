@@ -21,7 +21,10 @@
 ?>
 
 	<div id="spot-gallery">
-    
+<!-- DAHERO #1816104 STRT MOVED PLATE HERE -->
+<?php $tag = @reset(get_the_terms(get_the_ID(), 'spot_tags')); ?>
+<?php if (is_object($tag)) : ?><p class="number-plate"><?=strtoupper($tag->name);?></p><?php endif; ?>
+<!-- DAHERO #1816104 STOP -->
     	<?php
 		
 			//// GETS OUR FIRST IMAGE URL
